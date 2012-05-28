@@ -1,0 +1,15 @@
+#import <UIKit/UIKit.h>
+#import "AbstractViewController.h"
+
+
+@interface MoveWbViewController : AbstractViewController {
+	// INTERFACE
+	UIButton *btCheckBox,*btSelectGroup;	
+	UIImage *imgCheckBoxOn, *imgCheckBoxOff;
+	UILabel *lbGroupName;
+	NSMutableArray *arrChangedWbID;
+	NSMutableDictionary *destGroup,*changedWbList;
+	UIScrollView *scrollView;
+}
+
+@end

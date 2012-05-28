@@ -1,0 +1,16 @@
+package com.oxseed.gui.mobile.proto;
+option java_outer_classname = "BasketProcessInfo";
+
+// headers 
+message Wb { 
+  required string id = 1;   
+  required string type = 2;
+  optional string name = 3;
+  optional string lastBuildDate = 4;
+  optional string inMandantId = 5;
+  optional int32 inGroupId = 6; 
+} 
+
+message WbList { 
+  repeated Wb wb = 1; 
+} 

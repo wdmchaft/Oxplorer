@@ -1,0 +1,15 @@
+#import <Foundation/Foundation.h>
+
+@interface Process : NSObject {
+	NSString *id,*name,*description,*typeId,*entryDate;
+	BOOL hasRead;
+	int nDocs,position;
+	NSMutableArray *arrDoc;
+}
+
+@property (retain) NSString *id,*name,*description,*typeId,*entryDate;
+@property BOOL hasRead;
+@property int nDocs,position;
+@property NSMutableArray *arrDoc;
+
+@end

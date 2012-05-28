@@ -1,0 +1,18 @@
+#import "Document.h"
+
+@implementation Document
+@synthesize id,name,description,arrIndex,nPages,typeId;
+
+-(id)initWithId:(NSString*)idPar name:(NSString*)namePar typeId:(NSString*)typeIdPar nPages:(int)nPagesPar{
+	self=[super init];
+	if (self) {		
+		self.name=namePar;
+		self.id=idPar;	
+		self.typeId=typeIdPar;
+		self.nPages=nPagesPar;		
+		self.arrIndex=[[NSMutableArray alloc] init];
+	}
+	return self;
+}
+
+@end

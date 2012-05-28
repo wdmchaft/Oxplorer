@@ -1,0 +1,173 @@
+#import "ProcessViewController.h"
+#import "RssReader.h"
+#import "DocViewController.h"
+#import "UIFactory.h"
+
+@implementation ProcessViewController
+@synthesize scrollView;
+
+-(id)initWithProcess:(MandantDefinition_Process *)processPar{
+	self=[super init];	
+	if (self) {
+		process=processPar;
+		self.title = [processPar proName];
+	}
+	return self;	
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+	[spinner removeFromSuperview];
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];	
+	NSLog(@"DB1");
+	scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
+	scrollView.contentSize = CGSizeMake(320, 430);
+	scrollView.pagingEnabled = FALSE;		
+	scrollView.backgroundColor=[UIColor blackColor];
+	[self.view addSubview:scrollView];
+	
+	// LOOP FOR EACH DOCUMENTS INSIDE CURRENT PROCESS
+	int nDocs=[process numDocs];
+	NSMutableArray *pbfDocList=[process mutableArrDocsList];
+	NSLog(@"nDOCS == %d",pbfDocList.count);
+	NSData* imageData;
+	UIImage* image;
+	NSString *type,*creditor,*amount,*imgThumbURL;
+	int nPages;	
+	int docRowSpace=145;
+	int i=0;
+	NSLog(@"DB2");
+	for (MandantDefinition_Document *aDoc in pbfDocList) {		
+		NSLog(@"DB3");
+		nPages=[aDoc numPages];
+		type=[aDoc docType];
+		creditor=[aDoc docCreditor];
+		amount=[aDoc docAmount];
+		NSLog(@"DB4");
+		imgThumbURL=[[[aDoc mutableArrPagesList] objectAtIndex:0] imgThumnailUrl];		
+		NSLog(@"DB5");
+		imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imgThumbURL]];
+		image = [[UIImage alloc] initWithData:imageData];
+		
+		UIButton *btThumb=[UIButton buttonWithType:UIButtonTypeRoundedRect]; 
+		btThumb.frame = CGRectMake(232, 62+i*docRowSpace, 64, 89);			
+		btThumb.tag=aDoc;
+		[btThumb setImage:image forState:UIControlStateNormal];
+		[btThumb addTarget:self action:@selector(touchThumb:) forControlEvents:UIControlEventTouchUpInside];
+		[scrollView addSubview:btThumb];
+		
+		UIButton *btName=[UIButton buttonWithType:UIButtonTypeRoundedRect]; 
+		[btName setTitle:[aDoc docName] forState:UIControlStateNormal];
+		[btName setTitle:[aDoc docName] forState:UIControlStateHighlighted];
+		[btName setTitle:[aDoc docName] forState:UIControlStateDisabled];
+		[btName setTitle:[aDoc docName] forState:UIControlStateSelected];
+		btName.frame= CGRectMake(20, 40+i*docRowSpace, 280, 16);			
+		btName.tag=aDoc;
+		[btName addTarget:self action:@selector(touchThumb:) forControlEvents:UIControlEventTouchUpInside];
+		[scrollView addSubview:btName];
+		
+		UILabel *lbType=[[UILabel alloc] init];
+		lbType.text=[NSString stringWithFormat:@"Type: %@",type];
+		lbType.textColor=[UIColor whiteColor];
+		lbType.backgroundColor=[UIColor blackColor];
+		lbType.font=[UIFont systemFontOfSize:13];
+		lbType.frame = CGRectMake(20, 62+i*docRowSpace, 190, 20);			
+		[scrollView addSubview:lbType];			
+
+		UILabel *lbCreditor=[[UILabel alloc] init];
+		lbCreditor.text=[NSString stringWithFormat:@"Creditor: %@",creditor];
+		lbCreditor.textColor=[UIColor whiteColor];
+		lbCreditor.backgroundColor=[UIColor blackColor];
+		lbCreditor.font=[UIFont systemFontOfSize:13];
+		lbCreditor.frame = CGRectMake(20, 84+i*docRowSpace, 190, 20);			
+		[scrollView addSubview:lbCreditor];			
+		
+		UILabel *lbAmount=[[UILabel alloc] init];
+		lbAmount.text=[NSString stringWithFormat:@"Amount: %@",amount];
+		lbAmount.textColor=[UIColor whiteColor];
+		lbAmount.backgroundColor=[UIColor blackColor];
+		lbAmount.font=[UIFont systemFontOfSize:13];
+		lbAmount.frame = CGRectMake(20, 106+i*docRowSpace, 190, 20);			
+		[scrollView addSubview:lbAmount];			
+
+		UILabel *lbCountOfPages=[[UILabel alloc] init];
+		lbCountOfPages.text=[NSString stringWithFormat:@"Number of Pages: %d",nPages];
+		lbCountOfPages.textColor=[UIColor whiteColor];
+		lbCountOfPages.backgroundColor=[UIColor blackColor];
+		lbCountOfPages.font=[UIFont systemFontOfSize:13];
+		lbCountOfPages.frame = CGRectMake(20, 128+i*docRowSpace, 190, 20);			
+		[scrollView addSubview:lbCountOfPages];		
+		i++;
+	}
+}
+
+// ==================================================================================================
+#								pragma mark SUPPORTED METHODs
+// ==================================================================================================
+- (void)touchThumb:(UIButton *)sender {
+	spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	[spinner setCenter:CGPointMake(160, 200)]; 	
+	[spinner setBackgroundColor: [UIColor blackColor]];
+	[self.view addSubview:spinner];
+	[spinner startAnimating];
+	[self performSelectorInBackground:@selector(doAfterSpin:) withObject:sender];
+}
+-(void)doAfterSpin:(UIButton *)sender{
+	NSAutoreleasePool * pool=[[NSAutoreleasePool alloc] init];
+	MandantDefinition_Document * touchedDoc=(MandantDefinition_Document *)sender.tag;
+	docViewController=[[DocViewController alloc] initWithDoc:touchedDoc];	
+	[[self navigationController] pushViewController:docViewController animated:YES];
+	[pool release];
+}
+
+
+-(NSString *)filterID:(NSString *)s{
+	NSRange startRange = [s rangeOfString:@"\["];
+	return [s substringWithRange:NSMakeRange(0, startRange.location)];
+}
+-(NSString *)filterName:(NSString *)s{
+	int len=[s length];	
+	NSString *lastChar=[s substringWithRange:NSMakeRange(len-1,1)];
+	if (![lastChar isEqualToString:@"]"]) {
+		s=[NSString stringWithFormat:@"%@]",s];
+	}
+	NSLog(@"S=%@ with length=%d and lastChar=%@",s,len,lastChar);
+	
+	NSRange startRange = [s rangeOfString:@"\["];
+	NSRange endRange = [s rangeOfString:@"]"];		
+	NSString *result=[s substringWithRange:NSMakeRange(startRange.location+1,endRange.location-startRange.location-1)];
+	return result;
+}
+
+
+/*
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations.
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc. that aren't in use.
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+    [super dealloc];
+}
+
+
+@end

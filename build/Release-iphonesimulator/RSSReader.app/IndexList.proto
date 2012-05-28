@@ -1,0 +1,22 @@
+package com.oxseed.saas.archive.ocr.servlet.data;
+message Currency { 
+  required string currency = 1; 
+}; 
+message Index { 
+  required string id = 1; 
+  optional string type = 2; 
+  optional string suffix = 3; 
+  optional string prefix = 4; 
+  optional string sorting = 5; 
+  optional string relatedTo = 6; 
+  optional string fulltextCreatorId = 7; 
+  optional string minLength = 8; 
+  optional string maxLength = 9; 
+  optional string decimalPrecision = 10; 
+  optional string multiple = 11; 
+  repeated Currency usedCurrencies = 12; 
+  optional string shortcutKey = 15; 
+}; 
+message IndexList { 
+  repeated Index index = 1; 
+}; 

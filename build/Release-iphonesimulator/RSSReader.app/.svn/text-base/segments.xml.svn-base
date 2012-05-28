@@ -1,0 +1,35 @@
+<document xmlns:ns2="http://saas.maas.de/data">
+<id>20100501104129590000876FEDC15E03BC49BED6751FD18C41B640a280a52c3ef72309f</id>
+<pageList>
+	<page>
+		<pageID>0</pageID>
+		<ns2:recognition>
+			<status>0</status>
+			<imageData>
+				<width>1960</width>
+				<height>2828</height>
+				<xRes>0.0</xRes>
+				<yRes>0.0</yRes>
+			</imageData>
+			<segmentation>
+				<segmentList>
+					<segment>
+						<segmentID>0</segmentID>
+						<x>1736</x>
+						<y>0</y>
+						<h>19</h>
+						<w>125</w>
+						<fontThickness>0.0</fontThickness>
+					</segment>
+					<segment><segmentID>1</segmentID><x>1869</x><y>0</y><h>20</h><w>91</w><fontThickness>0.0</fontThickness></segment>
+					<segment><segmentID>2</segmentID><x>7</x><y>34</y><h>89</h><w>406</w><fontThickness>0.0</fontThickness></segment>
+					<segment><segmentID>3</segmentID><x>568</x><y>335</y><h>85</h><w>839</w><fontThickness>0.0</fontThickness></segment>				
+				</segmentList>
+			</segmentation>
+			<segmented>false</segmented>
+			<verified>false</verified>
+			<recognized>false</recognized>
+		</ns2:recognition>
+	</page>
+</pageList>
+</document>

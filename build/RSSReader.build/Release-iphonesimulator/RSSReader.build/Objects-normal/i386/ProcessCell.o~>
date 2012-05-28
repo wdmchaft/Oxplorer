@@ -1,0 +1,8 @@
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m:6: error: no declaration of property 'btForward' found in the interface
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m: In function '-[ProcessCell initWithFrame:isExpanded:isSelected:reuseIdentifier:]':
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m:9: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m:56: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m:57: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m:58: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m: In function '-[ProcessCell layoutSubviews]':
+/Users/AoI/Documents/RSSReader/Classes/ProcessCell.m:77: warning: unused variable 'frame'

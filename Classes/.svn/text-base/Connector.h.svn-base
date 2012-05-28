@@ -1,0 +1,30 @@
+#import <UIKit/UIKit.h>
+//#import "MandantCollection.pb.h"
+#import <sqlite3.h>
+//#import "MyMandant.h"
+#import "WorkBasket.h"
+#import "MyProcess.h"
+#import "MyDocument.h"
+#import "MyIndex.h"
+#import "MandantList.pb.h"
+#import "WbList.pb.h"
+
+@interface Connector : NSObject {	
+	
+	//DATABASE		
+	char *sql;
+	sqlite3_stmt *compiledSql;	
+}
+
++(void)initWithDB:(sqlite3*)input;
++(NSMutableArray *)getDbIndexListOfDoc:(MyDocument*)doc;
++(void)fetchDocumentAndUpdateProcessOfWb:(NSString*)wbId;
++(void)fetchProcessDict:(NSMutableDictionary*)dict forWb:(WorkBasket*)wb;
++(MyDocument*)getDocumentOfDict:(NSMutableDictionary*)dictDoc;
++(void)fetchProcessIdListForWorkBaskets;
++(void)syncProcess;
++(NSMutableArray *)getProcessListFromDB;
++(void)fetchWorkBasket;
++(void)syncWorkBasket;
++(NSString *)getNameOfWbID:(NSString*)wbID;
+@end

@@ -1,0 +1,4 @@
+/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell initWithFrame:reuseIdentifier:]':
+/Users/AoI/Documents/RSSReader/Classes/WbCell.m:7: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)
+/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell layoutSubviews]':
+/Users/AoI/Documents/RSSReader/Classes/WbCell.m:51: warning: unused variable 'frame'

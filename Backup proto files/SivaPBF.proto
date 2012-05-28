@@ -1,0 +1,47 @@
+package com.oxseed.gui.mobile.proto;
+option java_outer_classname = "BasketProcessIdInfo";
+
+message Error{
+	required int32 errCode=1;
+	required string errText=2;
+}
+
+//===== FIRST SCREEN messages
+message BasketProcessIds {
+	required string basketId = 1;
+	repeated string pId = 2;
+}
+message BasketProcessIdsList {
+	repeated BasketProcessIds basketProcessIds = 1;
+}
+
+//===== BASKET & DOCUMENT SCREEN messages
+message Index {
+	required string indexId = 1;
+	required string indexValue = 2;
+}
+message IndexList {
+	repeated Index index = 1;
+}
+message Document {
+	required string dId = 1;
+	required string typeId = 2;
+	required int32 pageCount = 3;
+	optional IndexList indexList = 4;
+}
+message DocumentList {
+	repeated Document document = 1;
+}
+message Process {
+	required string pId = 1;
+	required string orderId = 2;
+	required string typeId = 3;
+	required string entryDate = 4;
+	required string resubmitDate = 5;  // to know the user that the process is resubmitted for future date
+	optional IndexList indexList = 6;
+	required DocumentList documentList = 7;
+}
+message ProcessList {
+	repeated Process process = 1;
+}
+

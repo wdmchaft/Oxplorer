@@ -1,0 +1,25 @@
+package com.oxseed.saas.archive.ocr.servlet.data;
+message Page {
+	required int32 pageId=1;
+	optional float imageWidth=2;
+	optional float imageHeight=3;
+	optional float imageXRes=4;
+	optional float imageYRes=5;
+
+	message Segment{
+		required int32 id=1;
+		required float x=2;
+		required float y=3;
+		required float w=4;
+		required float h=5;
+
+		message Ocr {
+			required string classifierId=1;
+			required string result=2;
+			required string score=3;
+		};
+		repeated Ocr ocr=6;
+	};
+	repeated Segment segment=6;
+};
+

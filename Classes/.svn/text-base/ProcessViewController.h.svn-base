@@ -1,0 +1,20 @@
+#import <UIKit/UIKit.h>
+#import "MyScrollView.h"
+#import "Connector.h"
+#import "MandantCollection.pb.h"
+#import "AbstractViewController.h"
+//#import "DocViewController.h"
+
+@class DocViewController;
+@interface ProcessViewController : AbstractViewController {
+	//INTERFACE
+	IBOutlet DocViewController *docViewController;
+	MyScrollView *scrollView;
+	
+	//GENERAL
+	MandantDefinition_Process *process;
+	UIImageView	*imageView;
+}
+@property (nonatomic, retain) UIScrollView *scrollView;
+
+@end

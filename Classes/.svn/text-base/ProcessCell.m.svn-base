@@ -1,0 +1,95 @@
+#import "ProcessCell.h"
+#import "UIFactory.h"
+
+@implementation ProcessCell
+
+@synthesize lbProcessName,btToggle,btMore,btDown,btCheck,lbDate,btForward;
+
+-(id)initWithFrame:(CGRect)frame isExpanded:(BOOL)isExpanded isSelected:(BOOL)isSelected reuseIdentifier:(NSString *)reuseIdentifier{
+	if (self=[super initWithFrame:frame reuseIdentifier:reuseIdentifier]){		
+		lbProcessName=[[UILabel alloc] init];
+		lbProcessName.textAlignment=UITextAlignmentLeft;
+		lbProcessName.font=[UIFont boldSystemFontOfSize:13];
+		lbProcessName.textColor=[UIColor whiteColor];
+		lbProcessName.backgroundColor=[UIColor blackColor];
+		[self.contentView addSubview:lbProcessName];				
+		
+		lbDate=[UIFactory labelWithTitle:@"[31.12]" frame:CGRectMake(205, 3, 45, 20)];
+		[self.contentView addSubview:lbDate];
+		
+		// BUTTON TOGGLE
+		btToggle=[UIButton buttonWithType:UIButtonTypeCustom];				
+		if (isExpanded) 
+			[btToggle setImage:[UIImage imageNamed:@"arrow_doc.jpg"] forState:UIControlStateNormal];
+		else
+			[btToggle setImage:[UIImage imageNamed:@"arrow_ngang.jpg"] forState:UIControlStateNormal];
+		[self.contentView addSubview:btToggle];
+		
+		// BUTTON CHECKBOX
+		btCheck=[UIButton buttonWithType:UIButtonTypeCustom];				
+		imgCheckBoxOff = [UIImage imageNamed:@"checkbox_off.png"];
+		imgCheckBoxOn = [UIImage imageNamed:@"checkbox_on.png"];
+		if (isSelected) {
+			[btCheck setImage:imgCheckBoxOn forState:UIControlStateNormal];
+		} else {
+			[btCheck setImage:imgCheckBoxOff forState:UIControlStateNormal];
+		}
+		[self.contentView addSubview:btCheck];
+		
+		// BUTTON DOWN (RE-ARRANGE PROCESS)
+		btDown=[UIButton buttonWithType:UIButtonTypeCustom];				
+		[btDown setImage:[UIImage imageNamed:@"arrow_doc.jpg"] forState:UIControlStateNormal];
+		[self.contentView addSubview:btDown];		
+		
+		
+		// BUTTONs: OTHER FUNCTIONs		
+		btForward=[UIButton buttonWithType:UIButtonTypeCustom];				
+		[btForward setImage:[UIImage imageNamed:@"forward.png"] forState:UIControlStateNormal];
+		[self.contentView addSubview:btForward];
+		
+		btSplit=[UIButton buttonWithType:UIButtonTypeCustom];				
+		[btSplit setImage:[UIImage imageNamed:@"scissors.png"] forState:UIControlStateNormal];
+		[self.contentView addSubview:btSplit];		
+		
+		btMore=[[[UIButton alloc] init] retain];
+		btMore=[UIButton buttonWithType:UIButtonTypeRoundedRect];		
+		[btMore setTitle:@"More" forState:nil];
+		[btMore setFont:[UIFont systemFontOfSize:12]];
+		[btMore setTitleColor:[UIColor blackColor] forState:nil];		
+		[self.contentView addSubview:btMore];				
+	}
+	return self;
+}
+
+/*
+ -(void)processCollapsed{
+ [btDown setImage:[UIImage imageNamed:@"arrow_ngang.jpg"] forState:UIControlStateNormal];
+ }
+ -(void)processExpanded{
+ [btDown setImage:[UIImage imageNamed:@"arrow_doc.jpg"] forState:UIControlStateNormal];
+ }
+ */
+
+- (void)layoutSubviews {
+	[super layoutSubviews];
+	CGRect contentRect = self.contentView.bounds;
+	CGFloat boundsX = contentRect.origin.x;
+	CGRect frame;
+	[self setBackgroundColor:[UIColor blackColor]];
+	btCheck.frame=CGRectMake(boundsX+4 ,3, 20, 20);
+	btToggle.frame = CGRectMake(boundsX+30 ,3, 15, 20);
+	lbProcessName.frame = CGRectMake(boundsX+48 ,3, 152, 20);
+	
+	btDown.frame = CGRectMake(265 ,3, 15, 20);
+	btForward.frame = CGRectMake(295 ,3, 20, 20);
+	//btSplit.frame = CGRectMake(250 ,3, 20, 20);
+	//btMore.frame = CGRectMake(280 ,6, 35, 16);
+}
+
+/*
+ - (void)setSelected:(BOOL)selected animated:(BOOL)animated {	
+ [super setSelected:selected animated:animated];
+ }
+ */
+
+@end

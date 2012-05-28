@@ -1,0 +1,51 @@
+In file included from /Users/AoI/Documents/RSSReader/Classes/Connector.h:6,
+                 from /Users/AoI/Documents/RSSReader/Classes/DocViewController.h:5,
+                 from /Users/AoI/Documents/RSSReader/Classes/DocViewController.m:1:
+/Users/AoI/Documents/RSSReader/Classes/Process.h:13: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+/Users/AoI/Documents/RSSReader/Classes/Process.h:13: warning: assign attribute (default) not appropriate for non-gc object property 'arrDoc'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController initOnce]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:44: warning: 'DocViewController' may not respond to '-checkDB'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:44: warning: (Messages without a matching method signature
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:44: warning: will be assumed to return 'id' and accept
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:44: warning: '...' as arguments.)
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController initWithAPredefinedDoc]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:61: warning: no '-initWithId:name:' method found
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:66: warning: no '-initWitId:name:' method found
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController viewDidLoad]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:130: warning: 'DocViewController' may not respond to '-initSelectIndexView'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController initScrollView]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:194: warning: 'Page' may not respond to '-mutableSegmentList'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:195: warning: multiple methods named '-x' found
+/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccelerometer.h:23: warning: using '-(UIAccelerationValue)x'
+/Users/AoI/Documents/RSSReader/Classes/PageSegmentation.pb.h:82: warning: also found '-(Float32)x'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController scrollViewDidScroll:]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:290: warning: local declaration of 'scrollView' hides instance variable
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:290: warning: local declaration of 'scrollView' hides instance variable
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:291: warning: local declaration of 'scrollView' hides instance variable
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:292: warning: local declaration of 'scrollView' hides instance variable
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController btSiSelectClicked]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:382: warning: 'DocViewController' may not respond to '-loading'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController btSiSelectClicked_BG:]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:396: warning: 'Page' may not respond to '-mutableSegmentList'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:398: warning: 'Page_Segment' may not respond to '-mutableOcrList'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:390: warning: unused variable 'pool'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController btSiSelectClicked_MT]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:414: warning: 'DocViewController' may not respond to '-stopLoading'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController btOcrSaveClicked]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:436: warning: 'Connector' may not respond to '+addIndexToDb:docId:value:segmentId:'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController initOcrView]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:576: warning: 'UIFactory' may not respond to '+textViewWhiteRoundCornerWithFrame:'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:577: warning: 'UIFactory' may not respond to '+textFieldCenteredWithFrame:'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:579: warning: class 'DocViewController' does not implement the 'UITextFieldDelegate' protocol
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController initViewIndex]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:622: warning: no '-initWithDoc:process:allIndexList:dbIndexList:' method found
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: At top level:
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:705: warning: incomplete implementation of class 'DocViewController'
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:705: warning: method definition for '-btOcrEditClicked' not found
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:705: warning: method definition for '-btOcrDoneClicked' not found
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController initOnce]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:46: warning: control reaches end of non-void function
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController initWithAPredefinedDoc]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:74: warning: control reaches end of non-void function
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m: In function '-[DocViewController textFieldShouldReturn:]':
+/Users/AoI/Documents/RSSReader/Classes/DocViewController.m:522: warning: control reaches end of non-void function

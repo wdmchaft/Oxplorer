@@ -1,0 +1,1463 @@
+TRSSReader
+v7
+r0
+t316879688.414525
+cCheck dependencies
+cCpResource build/Debug-iphoneos/RSSReader.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/Info.plist RSSReader-Info.plist
+cCompileXIB /Users/AoI/Documents/RSSReader/MainWindow.xib
+cCompileXIB /Users/AoI/Documents/RSSReader/RootViewController.xib
+cCpResource build/Debug-iphoneos/RSSReader.app/arrow_doc.jpg images/arrow_doc.jpg
+cCpResource build/Debug-iphoneos/RSSReader.app/arrow_ngang.jpg images/arrow_ngang.jpg
+cCpResource build/Debug-iphoneos/RSSReader.app/db_RSSReader.sqlite db_RSSReader.sqlite
+cCopyPNGFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon57.png images/icon57.png
+cCopyPNGFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon72.png images/icon72.png
+cProcessPCH /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch.gch RSSReader_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch.gch RSSReader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/main.o /Users/AoI/Documents/RSSReader/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReaderAppDelegate.o /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RootViewController.o /Users/AoI/Documents/RSSReader/Classes/RootViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/GroupCell.o /Users/AoI/Documents/RSSReader/Classes/GroupCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/WbCell.o /Users/AoI/Documents/RSSReader/Classes/WbCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/EditGroupNameView.o /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RssReader.o /Users/AoI/Documents/RSSReader/Classes/RssReader.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader normal armv6
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/main.o /Users/AoI/Documents/RSSReader/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReaderAppDelegate.o /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RootViewController.o /Users/AoI/Documents/RSSReader/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/GroupCell.o /Users/AoI/Documents/RSSReader/Classes/GroupCell.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/WbCell.o /Users/AoI/Documents/RSSReader/Classes/WbCell.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/EditGroupNameView.o /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RssReader.o /Users/AoI/Documents/RSSReader/Classes/RssReader.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader normal armv7
+cCreateUniversalBinary /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader normal "armv6 armv7"
+cGenerateDSYMFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app.dSYM /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader
+cProcessProductPackaging "/Users/AoI/Library/MobileDevice/Provisioning Profiles/036EA1F7-C5C5-4B6A-AA1C-4E1A999B5B38.mobileprovision" /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision
+cTouch /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent
+cCodeSign /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004CC1111C00000000000000C4
+t1287721244
+s196
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/Availability.h
+c000000004CB3FBB80000000000001ADD
+t1286863800
+s6877
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/sqlite3.h
+c000000004CC10A9E0000000000042B54
+t1287719582
+s273236
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/lib/libsqlite3.0.dylib
+c000000004CC10AB400000000000CE100
+t1287719604
+s844032
+
+N/Users/AoI/Documents/ProtobufLib/Classes/AbstractMessage.h
+c000000004AB5DEF7000000000000036C
+t1253433079
+s876
+i"Message.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/AbstractMessage_Builder.h
+c000000004AB5DEF70000000000000368
+t1253433079
+s872
+i"Message_Builder.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/Bootstrap.h
+c000000004AB5DEF700000000000003C3
+t1253433079
+s963
+i"ForwardDeclarations.h"
+i"CodedInputStream.h"
+i"CodedOutputStream.h"
+i"ExtendableMessage.h"
+i"ExtendableMessage_Builder.h"
+i"ExtensionRegistry.h"
+i"GeneratedMessage.h"
+i"GeneratedMessage_Builder.h"
+i"Message_Builder.h"
+i"UnknownFieldSet.h"
+i"UnknownFieldSet_Builder.h"
+i"Utilities.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/CodedInputStream.h
+c000000004AB5DEF70000000000001649
+t1253433079
+s5705
+
+N/Users/AoI/Documents/ProtobufLib/Classes/CodedOutputStream.h
+c000000004AB5DEF7000000000000238A
+t1253433079
+s9098
+
+N/Users/AoI/Documents/ProtobufLib/Classes/ConcreteExtensionField.h
+c000000004AB5DEF70000000000000786
+t1253433079
+s1926
+i"ExtensionField.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/ExtendableMessage.h
+c000000004AB5DEF70000000000000932
+t1253433079
+s2354
+i"GeneratedMessage.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/ExtendableMessage_Builder.h
+c000000004AB5DEF70000000000000993
+t1253433079
+s2451
+i"GeneratedMessage_Builder.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/ExtensionField.h
+c000000004AB5DEF700000000000004EE
+t1253433079
+s1262
+i"WireFormat.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/ExtensionRegistry.h
+c000000004AB5DEF70000000000000C1A
+t1253433079
+s3098
+
+N/Users/AoI/Documents/ProtobufLib/Classes/Field.h
+c000000004AB5DEF70000000000000547
+t1253433079
+s1351
+
+N/Users/AoI/Documents/ProtobufLib/Classes/ForwardDeclarations.h
+c000000004AB5DEF70000000000000432
+t1253433079
+s1074
+
+N/Users/AoI/Documents/ProtobufLib/Classes/GeneratedMessage.h
+c000000004AB5DEF70000000000000434
+t1253433079
+s1076
+i"AbstractMessage.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/GeneratedMessage_Builder.h
+c000000004AB5DEF700000000000003DB
+t1253433079
+s987
+i"AbstractMessage_Builder.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/Message.h
+c000000004AB5DEF7000000000000082B
+t1253433079
+s2091
+
+N/Users/AoI/Documents/ProtobufLib/Classes/Message_Builder.h
+c000000004AB5DEF70000000000001474
+t1253433079
+s5236
+
+N/Users/AoI/Documents/ProtobufLib/Classes/MutableExtensionRegistry.h
+c000000004AB5DEF7000000000000034B
+t1253433079
+s843
+i"ExtensionRegistry.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/MutableField.h
+c000000004AB5DEF70000000000000435
+t1253433079
+s1077
+i"Field.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/ProtocolBuffers.h
+c000000004AB5DEF700000000000004B2
+t1253433079
+s1202
+i"Bootstrap.h"
+i"AbstractMessage.h"
+i"AbstractMessage_Builder.h"
+i"CodedInputStream.h"
+i"CodedOutputStream.h"
+i"ConcreteExtensionField.h"
+i"ExtendableMessage.h"
+i"ExtendableMessage_Builder.h"
+i"ExtensionField.h"
+i"ExtensionRegistry.h"
+i"Field.h"
+i"GeneratedMessage.h"
+i"GeneratedMessage_Builder.h"
+i"Message.h"
+i"Message_Builder.h"
+i"MutableExtensionRegistry.h"
+i"MutableField.h"
+i"UnknownFieldSet.h"
+i"UnknownFieldSet_Builder.h"
+i"Utilities.h"
+i"WireFormat.h"
+
+N/Users/AoI/Documents/ProtobufLib/Classes/UnknownFieldSet.h
+c000000004AB5DEF7000000000000051A
+t1253433079
+s1306
+
+N/Users/AoI/Documents/ProtobufLib/Classes/UnknownFieldSet_Builder.h
+c000000004AB5DEF700000000000006D1
+t1253433079
+s1745
+
+N/Users/AoI/Documents/ProtobufLib/Classes/Utilities.h
+c000000004AB5DEF7000000000000041D
+t1253433079
+s1053
+
+N/Users/AoI/Documents/ProtobufLib/Classes/WireFormat.h
+c000000004AB5DEF70000000000000668
+t1253433079
+s1640
+
+N/Users/AoI/Documents/ProtobufLib/build/Debug-iphoneos/libProtocolBuffers.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/../../Dropbox/_Document/RSS Reader Doc/segment.png
+c000000004DA2FC3D000000000000CAD1
+t1302527037
+s51921
+
+N/Users/AoI/Documents/RSSReader/../../Dropbox/_Document/RSS Reader Doc/segments.xml
+c000000004DA326740000000000000465
+t1302537844
+s1125
+
+N/Users/AoI/Documents/RSSReader/Classes/AbstractViewController.h
+c000000004DC03C9A000000000000010E
+t1304444058
+s270
+i<UIKit/UIKit.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/AbstractViewController.m
+c000000004DC36B0300000000000007EF
+t1304652547
+s2031
+i"AbstractViewController.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/DocViewController.h
+c000000004DC1A75A00000000000001B2
+t1304536922
+s434
+i<UIKit/UIKit.h>
+i"MyScrollView.h"
+i"AbstractViewController.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/DocViewController.m
+c000000004DC36DE700000000000014E8
+t1304653287
+s5352
+i"DocViewController.h"
+i"RssReader.h"
+i"DocViewController.h"
+i"XMLReader.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.h
+c000000004D8F15250000000000000154
+t1301222693
+s340
+i<Foundation/Foundation.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m
+c000000004D8F152900000000000007A1
+t1301222697
+s1953
+i"EditGroupNameView.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/GroupCell.h
+c000000004D8F15C50000000000000114
+t1301222853
+s276
+i<UIKit/UIKit.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/GroupCell.m
+c000000004D8F15E900000000000008F7
+t1301222889
+s2295
+i"GroupCell.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/MyScrollView.h
+c000000004DCA079F0000000000000133
+t1305085855
+s307
+i<UIKit/UIKit.h>
+i"RedEdge.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/MyScrollView.m
+c000000004DCA0CDC0000000000001273
+t1305087196
+s4723
+i"MyScrollView.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/ProcessViewController.h
+c000000004DC0462D000000000000019E
+t1304446509
+s414
+i<UIKit/UIKit.h>
+i"MyScrollView.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/ProcessViewController.m
+c000000004D8F14BD0000000000001E02
+t1301222589
+s7682
+i"ProcessViewController.h"
+i"RssReader.h"
+i"DocViewController.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.h
+c000000004D2AC3A100000000000001D3
+t1294648225
+s467
+i<UIKit/UIKit.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m
+c000000004DCA206A0000000000000AA2
+t1305092202
+s2722
+i"RSSReaderAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/RedEdge.h
+c000000004DC042FA000000000000004B
+t1304445690
+s75
+i<Foundation/Foundation.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/RedEdge.m
+c000000004DC0431300000000000001ED
+t1304445715
+s493
+i"RedEdge.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/RootViewController.h
+c000000004DC03C9400000000000003C1
+t1304444052
+s961
+i<UIKit/UIKit.h>
+i<sqlite3.h>
+i"EditGroupNameView.h"
+i"RssReader.h"
+i"AbstractViewController.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/RootViewController.m
+c000000004DC03CBB0000000000009E82
+t1304444091
+s40578
+i"RootViewController.h"
+i"GroupCell.h"
+i"WbCell.h"
+i"WbViewController.h"
+i"Person.pb.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/RssReader.h
+c000000004D8F15A40000000000000181
+t1301222820
+s385
+i<Foundation/Foundation.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/RssReader.m
+c000000004DC366350000000000000FB8
+t1304651317
+s4024
+i"RssReader.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/WbCell.h
+c000000004D8F1431000000000000011E
+t1301222449
+s286
+i<UIKit/UIKit.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/WbCell.m
+c000000004D92F9F50000000000000859
+t1301477877
+s2137
+i"WbCell.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/WbViewController.h
+c000000004DC9FB5400000000000001BE
+t1305082708
+s446
+i<UIKit/UIKit.h>
+i<sqlite3.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/WbViewController.m
+c000000004D8F140C0000000000001E85
+t1301222412
+s7813
+i"WbViewController.h"
+i"ProcessViewController.h"
+i"RssReader.h"
+i"RootViewController.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/XMLReader.h
+c000000004DB4D71C000000000000013D
+t1303697180
+s317
+i<Foundation/Foundation.h>
+
+N/Users/AoI/Documents/RSSReader/Classes/XMLReader.m
+c000000004DC36B2200000000000014D4
+t1304652578
+s5332
+i"XMLReader.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/thinh/Person.pb.h
+c000000004D98D5A700000000000013A2
+t1301861799
+s5026
+i"ProtocolBuffers.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/thinh/Person.pb.m
+c000000004D98D5A70000000000003D1F
+t1301861799
+s15647
+i"Person.pb.h"
+
+N/Users/AoI/Documents/RSSReader/Classes/thinh/person.proto
+c000000004D98D59A0000000000000167
+t1301861786
+s359
+
+N/Users/AoI/Documents/RSSReader/MainWindow.xib
+c000000004D58594D000000000000776B
+t1297635661
+s30571
+
+N/Users/AoI/Documents/RSSReader/RSSReader_Prefix.pch
+c000000004D98D0AC0000000000000144
+t1301860524
+s324
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/AoI/Documents/RSSReader/RootViewController.xib
+c000000004D2E94D40000000000005424
+t1294898388
+s21540
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app
+t1295186888
+s544
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app.dSYM
+t1295183979
+s102
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/Info.plist
+t1295186887
+s839
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/MainWindow.nib
+t1295183975
+s1511
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/PkgInfo
+t1295186887
+s8
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader
+t1295183979
+s205008
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/ResourceRules.plist
+t1295183975
+s485
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RootViewController.nib
+t1295183975
+s1224
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/arrow_doc.jpg
+t1295183975
+s722
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/arrow_ngang.jpg
+t1295183975
+s712
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/db_RSSReader.sqlite
+t1295183975
+s12288
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision
+t1295183979
+s7298
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon57.png
+t1295186887
+s7378
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon72.png
+t1295186887
+s10761
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/person.proto
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/segment.png
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/segments.xml
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/thumbnail.png
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/AbstractViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/DocViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/EditGroupNameView.o
+t1295183977
+s48948
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/GroupCell.o
+t1295183977
+s50376
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/MyScrollView.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/Person.pb.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/ProcessViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader
+t1295183978
+s92264
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader.LinkFileList
+c000000004D32F0660000000000000347
+t1295183974
+s839
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReaderAppDelegate.o
+t1295183977
+s52444
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RedEdge.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RootViewController.o
+t1295183978
+s143416
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RssReader.o
+t1295183977
+s19820
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/WbCell.o
+t1295183977
+s47008
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/WbViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/XMLReader.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/main.o
+t1295183977
+s6432
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/AbstractViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/DocViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/EditGroupNameView.o
+t1295183978
+s48908
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/GroupCell.o
+t1295183978
+s50076
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/MyScrollView.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/Person.pb.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/ProcessViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader
+t1295183979
+s92212
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader.LinkFileList
+c000000004D32F0660000000000000347
+t1295183974
+s839
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReaderAppDelegate.o
+t1295183978
+s52360
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RedEdge.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RootViewController.o
+t1295183978
+s141348
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RssReader.o
+t1295183978
+s19540
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/WbCell.o
+t1295183978
+s46696
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/WbViewController.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/XMLReader.o
+t2
+s0
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/main.o
+t1295183977
+s6416
+
+N/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent
+t1295186887
+s414
+
+N/Users/AoI/Documents/RSSReader/db_RSSReader.sqlite
+c000000004D589F250000000000003400
+t1297653541
+s13312
+
+N/Users/AoI/Documents/RSSReader/images/arrow_doc.jpg
+c000000004D2D284800000000000002D2
+t1294805064
+s722
+
+N/Users/AoI/Documents/RSSReader/images/arrow_ngang.jpg
+c000000004D2D28EC00000000000002C8
+t1294805228
+s712
+
+N/Users/AoI/Documents/RSSReader/images/icon57.png
+c000000004D32F7970000000000002526
+t1295185815
+s9510
+
+N/Users/AoI/Documents/RSSReader/images/icon72.png
+c000000004D32F9FF00000000000037D3
+t1295186431
+s14291
+
+N/Users/AoI/Documents/RSSReader/images/thumbnail.png
+c000000004D43E9730000000000000E0B
+t1296296307
+s3595
+
+N/Users/AoI/Documents/RSSReader/main.m
+c000000004D98B97F0000000000000165
+t1301854591
+s357
+i<UIKit/UIKit.h>
+
+N/Users/AoI/Library/MobileDevice/Provisioning Profiles/036EA1F7-C5C5-4B6A-AA1C-4E1A999B5B38.mobileprovision
+c000000004D013BCA0000000000001C82
+t1291926474
+s7298
+
+N/Users/AoI/Library/MobileDevice/Provisioning Profiles/3BD4EAE2-692A-4F5B-B670-21C5DF5EDF1D.mobileprovision
+c000000004DC37B2C00000000000020B5
+t1304656684
+s8373
+
+N/var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch.gch
+t1295183977
+s9983704
+
+N/var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-eysnvezalnacxsdxypbbdmcqpqgu/RSSReader_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fpxguoxvnudjwtdmlwkmhlpoearq/RSSReader_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch.gch
+t1295183977
+s10446552
+
+NRSSReader-Info.plist
+c000000004DC98E44000000000000044C
+t1305054788
+s1100
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies316879687#316879687#0(0"0(0#1#0"8624046560#0"0#
+
+CCodeSign /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app
+s316879687.862008
+e316879688.414468
+r1
+xCodeSign
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app
+o/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app: replacing invalid existing signature
+lSLF07#2@43"CodeSign build/Debug-iphoneos/RSSReader.app316879687#316879688#0(104"/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app: replacing invalid existing signature0(0#0#65"/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app8625077568#627"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Wolfgang Maas (B3T66795B3)" --resource-rules=/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/ResourceRules.plist --entitlements /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/AbstractViewController.o /Users/AoI/Documents/RSSReader/Classes/AbstractViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/DocViewController.o /Users/AoI/Documents/RSSReader/Classes/DocViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/EditGroupNameView.o /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876777.619835
+e316876777.767476
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/EditGroupNameView.o
+x/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m: In function '-[EditGroupNameView init]':
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:24: warning: class 'EditGroupNameView' does not implement the 'UITextFieldDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:40: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:41: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:42: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+lSLF07#2@66"Compile /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316876777#316876777#0(1383"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m: In function '-[EditGroupNameView init]':/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:24: warning: class 'EditGroupNameView' does not implement the 'UITextFieldDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:40: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:41: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:42: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast7(22@79"Class 'EditGroupNameView' does not implement the 'UITextFieldDelegate' protocol316876777#101#152#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#24#0#24#0#45"class '*' does not implement the '*' protocol0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876777#253#157#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#35#0#35#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876777#410#246#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#36#0#36#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876777#656#162#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#37#0#37#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876777#818#157#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#40#0#40#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876777#975#246#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#41#0#41#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876777#1221#162#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#42#0#42#0#67"passing argument * of '*' makes integer from pointer without a cast0(0#0#58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m8622006272#1710"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/EditGroupNameView.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/GroupCell.o /Users/AoI/Documents/RSSReader/Classes/GroupCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876777.334039
+e316876777.471895
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/GroupCell.o
+x/Users/AoI/Documents/RSSReader/Classes/GroupCell.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell initWithFrame:reuseIdentifier:]':
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:15: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:28: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:29: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:30: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell layoutSubviews]':
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:51: warning: unused variable 'frame'
+lSLF07#2@58"Compile /Users/AoI/Documents/RSSReader/Classes/GroupCell.m316876777#316876777#0(1643"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell initWithFrame:reuseIdentifier:]':/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:15: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:28: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:29: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:30: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell layoutSubviews]':/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:51: warning: unused variable 'frame'8(22@202"'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)316876777#111#267#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#15#0#15#0#33"'*' is deprecated (declared at *)0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876777#378#149#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#28#0#28#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876777#527#238#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#29#0#29#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876777#765#154#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#30#0#30#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876777#919#149#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#35#0#35#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876777#1068#238#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#36#0#36#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876777#1306#154#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#37#0#37#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@23"Unused variable 'frame'316876777#1555#88#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#51#0#51#0#19"unused variable '*'0(0#0#50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m8624472416#1694"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/GroupCell.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/GroupCell.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/MyScrollView.o /Users/AoI/Documents/RSSReader/Classes/MyScrollView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/Person.pb.o /Users/AoI/Documents/RSSReader/Classes/thinh/Person.pb.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/ProcessViewController.o /Users/AoI/Documents/RSSReader/Classes/ProcessViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReaderAppDelegate.o /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876777.108248
+e316876777.333912
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReaderAppDelegate.o
+x/Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m316876777#316876777#0(0"0(0#0#61"/Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m8621696032#1716"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReaderAppDelegate.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RedEdge.o /Users/AoI/Documents/RSSReader/Classes/RedEdge.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RootViewController.o /Users/AoI/Documents/RSSReader/Classes/RootViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876777.310519
+e316876778.063047
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RootViewController.o
+x/Users/AoI/Documents/RSSReader/Classes/RootViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController viewDidLoad]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: 'RootViewController' may not respond to '-loading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: (Messages without a matching method signature
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: will be assumed to return 'id' and accept
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: '...' as arguments.)
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController doAfterFirstLoading]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:51: warning: 'RootViewController' may not respond to '-syncMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:52: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:53: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:54: warning: 'RootViewController' may not respond to '-getProcessList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btAddGroup' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btMandant' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:69: warning: 'RootViewController' may not respond to '-stopLoading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:numberOfRowsInSection:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: comparison between pointer and integer
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: comparison between pointer and integer
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: local declaration of 'tableView' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct GroupCell *'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:163: warning: 'GroupCell' may not respond to '-expanded:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: local declaration of 'tableView' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct WbCell *'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:didSelectRowAtIndexPath:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:219: warning: 'RootViewController' may not respond to '-convertIndexPathToID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:220: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController actionSheet:clickedButtonAtIndex:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:237: warning: 'RootViewController' may not respond to '-loading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:240: warning: 'RootViewController' may not respond to '-deleteMandant:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:244: warning: 'RootViewController' may not respond to '-showAlertWithTitle:andMessage:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:246: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:258: warning: 'RootViewController' may not respond to '-loading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:263: warning: 'RootViewController' may not respond to '-moveWbWithID:toGroupWithID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btMandantClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:272: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btAddGroupClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:290: warning: 'RootViewController' may not respond to '-addGroup:withExpanded:andPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btEditClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:295: warning: 'RootViewController' may not respond to '-openEditGroupNameView'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDeleteClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:300: warning: 'RootViewController' may not respond to '-deleteGroupWithID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btOKClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:304: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDownClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:319: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:321: warning: 'RootViewController' may not respond to '-changePositionOfGroupWithID:andGroupWithID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changePositionOfGroupWithID:andGroupWithID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:348: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController showAlertWithTitle:andMessage:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:388: warning: local declaration of 'errorAlert' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController convertIndexPathToID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:399: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController getIdFromSection:andRow:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: comparison between pointer and integer
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:421: warning: control reaches end of non-void function
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController textFieldShouldReturn:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:425: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController openEditGroupNameView]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:431: warning: class 'RootViewController' does not implement the 'UITextFieldDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController updateWbWithURL:inMandant:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:453: warning: incompatible Objective-C types 'struct NSString *', expected 'struct NSURL *' when passing argument 1 of 'initWithURL:' from distinct Objective-C type
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:454: warning: 'RssReader' may not respond to '-fetch'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController refreshWB]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:555: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:543: warning: unused variable 'mandant'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController moveWbWithID:toGroupWithID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:565: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteMandant:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:581: warning: 'RootViewController' may not respond to '-getMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:582: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addMandant:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:597: warning: 'RssReader' may not respond to '-setURL:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:598: warning: 'RssReader' may not respond to '-fetch'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:599: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:623: warning: 'RootViewController' may not respond to '-getMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:624: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:609: warning: unused variable 'nProcessInWB'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:608: warning: unused variable 'wbRss'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteGroupWithID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:643: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:644: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addGroup:withExpanded:andPosition:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:656: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changeGroupName:atId:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:670: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController syncMandantList]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:680: warning: 'RootViewController' may not respond to '-getMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:683: warning: 'RssReader' may not respond to '-setURL:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:684: warning: 'RssReader' may not respond to '-fetch'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:685: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:729: warning: 'RootViewController' may not respond to '-getMandantList'
+lSLF07#2@67"Compile /Users/AoI/Documents/RSSReader/Classes/RootViewController.m316876777#316876778#0(12998"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController viewDidLoad]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: 'RootViewController' may not respond to '-loading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: (Messages without a matching method signature/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: will be assumed to return 'id' and accept/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: '...' as arguments.)/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController doAfterFirstLoading]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:51: warning: 'RootViewController' may not respond to '-syncMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:52: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:53: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:54: warning: 'RootViewController' may not respond to '-getProcessList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btAddGroup' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btMandant' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:69: warning: 'RootViewController' may not respond to '-stopLoading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:numberOfRowsInSection:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: comparison between pointer and integer/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: comparison between pointer and integer/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: local declaration of 'tableView' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct GroupCell *'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:163: warning: 'GroupCell' may not respond to '-expanded:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: local declaration of 'tableView' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct WbCell *'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:didSelectRowAtIndexPath:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:219: warning: 'RootViewController' may not respond to '-convertIndexPathToID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:220: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController actionSheet:clickedButtonAtIndex:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:237: warning: 'RootViewController' may not respond to '-loading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:240: warning: 'RootViewController' may not respond to '-deleteMandant:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:244: warning: 'RootViewController' may not respond to '-showAlertWithTitle:andMessage:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:246: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:258: warning: 'RootViewController' may not respond to '-loading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:263: warning: 'RootViewController' may not respond to '-moveWbWithID:toGroupWithID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btMandantClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:272: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btAddGroupClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:290: warning: 'RootViewController' may not respond to '-addGroup:withExpanded:andPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btEditClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:295: warning: 'RootViewController' may not respond to '-openEditGroupNameView'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDeleteClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:300: warning: 'RootViewController' may not respond to '-deleteGroupWithID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btOKClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:304: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDownClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:319: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:321: warning: 'RootViewController' may not respond to '-changePositionOfGroupWithID:andGroupWithID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changePositionOfGroupWithID:andGroupWithID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:348: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController showAlertWithTitle:andMessage:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:388: warning: local declaration of 'errorAlert' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController convertIndexPathToID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:399: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController getIdFromSection:andRow:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: comparison between pointer and integer/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:421: warning: control reaches end of non-void function/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController textFieldShouldReturn:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:425: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController openEditGroupNameView]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:431: warning: class 'RootViewController' does not implement the 'UITextFieldDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController updateWbWithURL:inMandant:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:453: warning: incompatible Objective-C types 'struct NSString *', expected 'struct NSURL *' when passing argument 1 of 'initWithURL:' from distinct Objective-C type/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:454: warning: 'RssReader' may not respond to '-fetch'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController refreshWB]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:555: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:543: warning: unused variable 'mandant'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController moveWbWithID:toGroupWithID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:565: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteMandant:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:581: warning: 'RootViewController' may not respond to '-getMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:582: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addMandant:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:597: warning: 'RssReader' may not respond to '-setURL:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:598: warning: 'RssReader' may not respond to '-fetch'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:599: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:623: warning: 'RootViewController' may not respond to '-getMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:624: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:609: warning: unused variable 'nProcessInWB'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:608: warning: unused variable 'wbRss'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteGroupWithID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:643: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:644: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addGroup:withExpanded:andPosition:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:656: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changeGroupName:atId:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:670: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController syncMandantList]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:680: warning: 'RootViewController' may not respond to '-getMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:683: warning: 'RssReader' may not respond to '-setURL:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:684: warning: 'RssReader' may not respond to '-fetch'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:685: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:729: warning: 'RootViewController' may not respond to '-getMandantList'72(22@50"'RootViewController' may not respond to '-loading'316876777#110#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)316876777#234#119#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#18#0#18#0#0"0(22@58"'RootViewController' may not respond to '-syncMandantList'316876777#680#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#51#0#51#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876777#812#129#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#52#0#52#0#26"'*' may not respond to '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876777#941#126#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#53#0#53#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-getProcessList'316876777#1067#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#54#0#54#0#26"'*' may not respond to '*'0(22@57"Local declaration of 'btAddGroup' hides instance variable316876777#1198#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#62#0#62#0#0"0(22@56"Local declaration of 'btMandant' hides instance variable316876777#1329#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#62#0#62#0#0"0(22@54"'RootViewController' may not respond to '-stopLoading'316876777#1459#128#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#69#0#69#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876777#1718#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#111#0#111#0#26"'*' may not respond to '*'0(22@38"Comparison between pointer and integer316876777#1854#113#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#111#0#111#0#0"0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876777#2098#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#134#0#134#0#26"'*' may not respond to '*'0(22@38"Comparison between pointer and integer316876777#2234#113#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#134#0#134#0#0"0(22@56"Local declaration of 'tableView' hides instance variable316876777#2347#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#142#0#142#0#0"0(22@101"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct GroupCell *'316876777#2478#176#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#142#0#142#0#61"incompatible Objective-C types initializing '*', expected '*'0(22@43"'GroupCell' may not respond to '-expanded:'316876777#2654#118#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#163#0#163#0#26"'*' may not respond to '*'0(22@56"Local declaration of 'tableView' hides instance variable316876777#2772#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#184#0#184#0#0"0(22@98"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct WbCell *'316876777#2903#173#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#184#0#184#0#61"incompatible Objective-C types initializing '*', expected '*'0(22@64"'RootViewController' may not respond to '-convertIndexPathToID:'316876777#3209#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#219#0#219#0#26"'*' may not respond to '*'0(22@82"Class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol316876777#3348#157#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#220#0#220#0#45"class '*' does not implement the '*' protocol0(22@50"'RootViewController' may not respond to '-loading'316876777#3637#125#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#237#0#237#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-deleteMandant:'316876777#3762#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#240#0#240#0#26"'*' may not respond to '*'0(22@73"'RootViewController' may not respond to '-showAlertWithTitle:andMessage:'316876777#3894#148#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#244#0#244#0#26"'*' may not respond to '*'0(22@82"Class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol316876777#4042#157#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#246#0#246#0#45"class '*' does not implement the '*' protocol0(22@50"'RootViewController' may not respond to '-loading'316876777#4199#125#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#258#0#258#0#26"'*' may not respond to '*'0(22@70"'RootViewController' may not respond to '-moveWbWithID:toGroupWithID:'316876777#4324#145#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#263#0#263#0#26"'*' may not respond to '*'0(22@82"Class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol316876777#4585#157#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#272#0#272#0#45"class '*' does not implement the '*' protocol0(22@77"'RootViewController' may not respond to '-addGroup:withExpanded:andPosition:'316876777#4859#152#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#290#0#290#0#26"'*' may not respond to '*'0(22@64"'RootViewController' may not respond to '-openEditGroupNameView'316876777#5124#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#295#0#295#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-deleteGroupWithID:'316876777#5378#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#300#0#300#0#26"'*' may not respond to '*'0(22@64"'RootViewController' may not respond to '-changeGroupName:atId:'316876777#5625#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#304#0#304#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876777#5877#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#315#0#315#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876777#6013#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#315#0#315#0#0"0(22@67"'RootViewController' may not respond to '-getIdFromSection:andRow:'316876777#6144#142#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#319#0#319#0#26"'*' may not respond to '*'0(22@86"'RootViewController' may not respond to '-changePositionOfGroupWithID:andGroupWithID:'316876777#6286#161#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#321#0#321#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876777#6589#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#348#0#348#0#26"'*' may not respond to '*'0(22@57"Local declaration of 'errorAlert' hides instance variable316876777#6848#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#388#0#388#0#0"0(22@67"'RootViewController' may not respond to '-getIdFromSection:andRow:'316876777#7100#142#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#399#0#399#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876777#7365#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#405#0#405#0#26"'*' may not respond to '*'0(22@38"Comparison between pointer and integer316876777#7501#113#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#405#0#405#0#0"0(22@40"Control reaches end of non-void function316876777#7614#115#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#421#0#421#0#40"control reaches end of non-void function0(22@64"'RootViewController' may not respond to '-changeGroupName:atId:'316876777#7850#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#425#0#425#0#26"'*' may not respond to '*'0(22@80"Class 'RootViewController' does not implement the 'UITextFieldDelegate' protocol316876777#8109#155#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#431#0#431#0#45"class '*' does not implement the '*' protocol0(22@150"Incompatible Objective-C types 'struct NSString *', expected 'struct NSURL *' when passing argument 1 of 'initWithURL:' from distinct Objective-C type316876777#8389#225#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#453#0#453#0#0"0(22@39"'RssReader' may not respond to '-fetch'316876777#8614#114#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#454#0#454#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876777#8728#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#455#0#455#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876777#8852#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#455#0#455#0#0"0(22@52"'RootViewController' may not respond to '-getWbList'316876777#9091#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#555#0#555#0#26"'*' may not respond to '*'0(22@25"Unused variable 'mandant'316876777#9218#100#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#543#0#543#0#19"unused variable '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876777#9444#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#565#0#565#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-getMandantList'316876777#9684#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#581#0#581#0#26"'*' may not respond to '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876777#9816#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#582#0#582#0#26"'*' may not respond to '*'0(22@41"'RssReader' may not respond to '-setURL:'316876777#10053#116#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#597#0#597#0#26"'*' may not respond to '*'0(22@39"'RssReader' may not respond to '-fetch'316876777#10169#114#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#598#0#598#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876777#10283#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#599#0#599#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876777#10407#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#604#0#604#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876777#10531#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#604#0#604#0#0"0(22@57"'RootViewController' may not respond to '-getMandantList'316876777#10662#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#623#0#623#0#26"'*' may not respond to '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876777#10794#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#624#0#624#0#26"'*' may not respond to '*'0(22@30"Unused variable 'nProcessInWB'316876777#10921#105#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#609#0#609#0#19"unused variable '*'0(22@23"Unused variable 'wbRss'316876777#11026#98#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#608#0#608#0#19"unused variable '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876777#11241#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#643#0#643#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876777#11368#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#644#0#644#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876777#11631#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#656#0#656#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876777#11881#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#670#0#670#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-getMandantList'316876777#12125#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#680#0#680#0#26"'*' may not respond to '*'0(22@41"'RssReader' may not respond to '-setURL:'316876777#12257#116#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#683#0#683#0#26"'*' may not respond to '*'0(22@39"'RssReader' may not respond to '-fetch'316876777#12373#114#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#684#0#684#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876777#12487#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#685#0#685#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876777#12611#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#689#0#689#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876777#12735#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#689#0#689#0#0"0(22@57"'RootViewController' may not respond to '-getMandantList'316876777#12866#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#729#0#729#0#26"'*' may not respond to '*'0(0#0#59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m8617589440#1712"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/RootViewController.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RootViewController.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RssReader.o /Users/AoI/Documents/RSSReader/Classes/RssReader.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876777.767596
+e316876777.860656
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RssReader.o
+x/Users/AoI/Documents/RSSReader/Classes/RssReader.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader fetch]':
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: 'RssReader' may not respond to '-urlEncode:'
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: (Messages without a matching method signature
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: will be assumed to return 'id' and accept
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: '...' as arguments.)
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:19: warning: 'RssReader' may not respond to '-parse'
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader parse]':
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:24: warning: class 'RssReader' does not implement the 'NSXMLParserDelegate' protocol
+lSLF07#2@58"Compile /Users/AoI/Documents/RSSReader/Classes/RssReader.m316876777#316876777#0(822"/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader fetch]':/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: 'RssReader' may not respond to '-urlEncode:'/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: (Messages without a matching method signature/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: will be assumed to return 'id' and accept/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: '...' as arguments.)/Users/AoI/Documents/RSSReader/Classes/RssReader.m:19: warning: 'RssReader' may not respond to '-parse'/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader parse]':/Users/AoI/Documents/RSSReader/Classes/RssReader.m:24: warning: class 'RssReader' does not implement the 'NSXMLParserDelegate' protocol4(22@44"'RssReader' may not respond to '-urlEncode:'316876777#86#109#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)316876777#195#110#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#18#0#18#0#0"0(22@39"'RssReader' may not respond to '-parse'316876777#496#104#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#19#0#19#0#26"'*' may not respond to '*'0(22@71"Class 'RssReader' does not implement the 'NSXMLParserDelegate' protocol316876777#686#136#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#24#0#24#0#45"class '*' does not implement the '*' protocol0(0#0#50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m8621626496#1694"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/RssReader.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RssReader.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/WbCell.o /Users/AoI/Documents/RSSReader/Classes/WbCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876777.472003
+e316876777.619713
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/WbCell.o
+x/Users/AoI/Documents/RSSReader/Classes/WbCell.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell initWithFrame:reuseIdentifier:]':
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m:8: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell layoutSubviews]':
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m:43: warning: unused variable 'frame'
+lSLF07#2@55"Compile /Users/AoI/Documents/RSSReader/Classes/WbCell.m316876777#316876777#0(542"/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell initWithFrame:reuseIdentifier:]':/Users/AoI/Documents/RSSReader/Classes/WbCell.m:8: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell layoutSubviews]':/Users/AoI/Documents/RSSReader/Classes/WbCell.m:43: warning: unused variable 'frame'2(22@202"'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)316876777#105#263#0(6@47"/Users/AoI/Documents/RSSReader/Classes/WbCell.m316707674#8#0#8#0#33"'*' is deprecated (declared at *)0(22@23"Unused variable 'frame'316876777#457#85#0(6@47"/Users/AoI/Documents/RSSReader/Classes/WbCell.m316707674#43#0#43#0#19"unused variable '*'0(0#0#47"/Users/AoI/Documents/RSSReader/Classes/WbCell.m8620165952#1688"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/WbCell.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/WbCell.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/WbViewController.o /Users/AoI/Documents/RSSReader/Classes/WbViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/XMLReader.o /Users/AoI/Documents/RSSReader/Classes/XMLReader.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/main.o /Users/AoI/Documents/RSSReader/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876777.107046
+e316876777.310393
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/main.o
+x/Users/AoI/Documents/RSSReader/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/AoI/Documents/RSSReader/main.m316876777#316876777#0(0"0(0#0#37"/Users/AoI/Documents/RSSReader/main.m8622376800#1676"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/main.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/AbstractViewController.o /Users/AoI/Documents/RSSReader/Classes/AbstractViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/DocViewController.o /Users/AoI/Documents/RSSReader/Classes/DocViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/EditGroupNameView.o /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876778.664706
+e316876778.834145
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/EditGroupNameView.o
+x/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m: In function '-[EditGroupNameView init]':
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:24: warning: class 'EditGroupNameView' does not implement the 'UITextFieldDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:40: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:41: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:42: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+lSLF07#2@66"Compile /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316876778#316876778#0(1383"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m: In function '-[EditGroupNameView init]':/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:24: warning: class 'EditGroupNameView' does not implement the 'UITextFieldDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:40: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:41: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m:42: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast7(22@79"Class 'EditGroupNameView' does not implement the 'UITextFieldDelegate' protocol316876778#101#152#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#24#0#24#0#45"class '*' does not implement the '*' protocol0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876778#253#157#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#35#0#35#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876778#410#246#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#36#0#36#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876778#656#162#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#37#0#37#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876778#818#157#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#40#0#40#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876778#975#246#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#41#0#41#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876778#1221#162#0(6@58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m316588412#42#0#42#0#67"passing argument * of '*' makes integer from pointer without a cast0(0#0#58"/Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m8621587936#1710"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/EditGroupNameView.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/EditGroupNameView.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/GroupCell.o /Users/AoI/Documents/RSSReader/Classes/GroupCell.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876778.501069
+e316876778.617081
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/GroupCell.o
+x/Users/AoI/Documents/RSSReader/Classes/GroupCell.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell initWithFrame:reuseIdentifier:]':
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:15: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:28: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:29: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:30: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell layoutSubviews]':
+o/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:51: warning: unused variable 'frame'
+lSLF07#2@58"Compile /Users/AoI/Documents/RSSReader/Classes/GroupCell.m316876778#316876778#0(1643"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell initWithFrame:reuseIdentifier:]':/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:15: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:28: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:29: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:30: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:35: warning: passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:36: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:37: warning: passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/GroupCell.m: In function '-[GroupCell layoutSubviews]':/Users/AoI/Documents/RSSReader/Classes/GroupCell.m:51: warning: unused variable 'frame'8(22@202"'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)316876778#111#267#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#15#0#15#0#33"'*' is deprecated (declared at *)0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876778#378#149#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#28#0#28#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876778#527#238#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#29#0#29#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876778#765#154#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#30#0#30#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@84"Passing argument 2 of 'setTitle:forState:' makes integer from pointer without a cast316876778#919#149#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#35#0#35#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@173"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)316876778#1068#238#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#36#0#36#0#33"'*' is deprecated (declared at *)0(22@89"Passing argument 2 of 'setTitleColor:forState:' makes integer from pointer without a cast316876778#1306#154#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#37#0#37#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@23"Unused variable 'frame'316876778#1555#88#0(6@50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m316611645#51#0#51#0#19"unused variable '*'0(0#0#50"/Users/AoI/Documents/RSSReader/Classes/GroupCell.m8613277696#1694"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/GroupCell.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/GroupCell.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/MyScrollView.o /Users/AoI/Documents/RSSReader/Classes/MyScrollView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/Person.pb.o /Users/AoI/Documents/RSSReader/Classes/thinh/Person.pb.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/ProcessViewController.o /Users/AoI/Documents/RSSReader/Classes/ProcessViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReaderAppDelegate.o /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876777.952260
+e316876778.073786
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReaderAppDelegate.o
+x/Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m316876777#316876778#0(0"0(0#0#61"/Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m8622371488#1716"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/RSSReaderAppDelegate.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReaderAppDelegate.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RedEdge.o /Users/AoI/Documents/RSSReader/Classes/RedEdge.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RootViewController.o /Users/AoI/Documents/RSSReader/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876778.073922
+e316876778.500929
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RootViewController.o
+x/Users/AoI/Documents/RSSReader/Classes/RootViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController viewDidLoad]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: 'RootViewController' may not respond to '-loading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: (Messages without a matching method signature
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: will be assumed to return 'id' and accept
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: '...' as arguments.)
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController doAfterFirstLoading]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:51: warning: 'RootViewController' may not respond to '-syncMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:52: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:53: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:54: warning: 'RootViewController' may not respond to '-getProcessList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btAddGroup' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btMandant' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:69: warning: 'RootViewController' may not respond to '-stopLoading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:numberOfRowsInSection:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: comparison between pointer and integer
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: comparison between pointer and integer
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: local declaration of 'tableView' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct GroupCell *'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:163: warning: 'GroupCell' may not respond to '-expanded:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: local declaration of 'tableView' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct WbCell *'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:didSelectRowAtIndexPath:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:219: warning: 'RootViewController' may not respond to '-convertIndexPathToID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:220: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController actionSheet:clickedButtonAtIndex:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:237: warning: 'RootViewController' may not respond to '-loading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:240: warning: 'RootViewController' may not respond to '-deleteMandant:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:244: warning: 'RootViewController' may not respond to '-showAlertWithTitle:andMessage:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:246: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:258: warning: 'RootViewController' may not respond to '-loading'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:263: warning: 'RootViewController' may not respond to '-moveWbWithID:toGroupWithID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btMandantClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:272: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btAddGroupClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:290: warning: 'RootViewController' may not respond to '-addGroup:withExpanded:andPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btEditClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:295: warning: 'RootViewController' may not respond to '-openEditGroupNameView'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDeleteClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:300: warning: 'RootViewController' may not respond to '-deleteGroupWithID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btOKClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:304: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDownClicked:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:319: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:321: warning: 'RootViewController' may not respond to '-changePositionOfGroupWithID:andGroupWithID:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changePositionOfGroupWithID:andGroupWithID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:348: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController showAlertWithTitle:andMessage:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:388: warning: local declaration of 'errorAlert' hides instance variable
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController convertIndexPathToID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:399: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController getIdFromSection:andRow:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: 'RootViewController' may not respond to '-sectionOfPosition:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: comparison between pointer and integer
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:421: warning: control reaches end of non-void function
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController textFieldShouldReturn:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:425: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController openEditGroupNameView]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:431: warning: class 'RootViewController' does not implement the 'UITextFieldDelegate' protocol
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController updateWbWithURL:inMandant:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:453: warning: incompatible Objective-C types 'struct NSString *', expected 'struct NSURL *' when passing argument 1 of 'initWithURL:' from distinct Objective-C type
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:454: warning: 'RssReader' may not respond to '-fetch'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController refreshWB]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:555: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:543: warning: unused variable 'mandant'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController moveWbWithID:toGroupWithID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:565: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteMandant:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:581: warning: 'RootViewController' may not respond to '-getMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:582: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addMandant:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:597: warning: 'RssReader' may not respond to '-setURL:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:598: warning: 'RssReader' may not respond to '-fetch'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:599: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:623: warning: 'RootViewController' may not respond to '-getMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:624: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:609: warning: unused variable 'nProcessInWB'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:608: warning: unused variable 'wbRss'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteGroupWithID:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:643: warning: 'RootViewController' may not respond to '-getWbList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:644: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addGroup:withExpanded:andPosition:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:656: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changeGroupName:atId:]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:670: warning: 'RootViewController' may not respond to '-getGroupList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController syncMandantList]':
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:680: warning: 'RootViewController' may not respond to '-getMandantList'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:683: warning: 'RssReader' may not respond to '-setURL:'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:684: warning: 'RssReader' may not respond to '-fetch'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:685: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: 'RssReader' may not respond to '-getNumberOfItem'
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: initialization makes integer from pointer without a cast
+o/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:729: warning: 'RootViewController' may not respond to '-getMandantList'
+lSLF07#2@67"Compile /Users/AoI/Documents/RSSReader/Classes/RootViewController.m316876778#316876778#0(12998"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController viewDidLoad]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: 'RootViewController' may not respond to '-loading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: (Messages without a matching method signature/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: will be assumed to return 'id' and accept/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:18: warning: '...' as arguments.)/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController doAfterFirstLoading]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:51: warning: 'RootViewController' may not respond to '-syncMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:52: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:53: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:54: warning: 'RootViewController' may not respond to '-getProcessList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btAddGroup' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:62: warning: local declaration of 'btMandant' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:69: warning: 'RootViewController' may not respond to '-stopLoading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:numberOfRowsInSection:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:111: warning: comparison between pointer and integer/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:134: warning: comparison between pointer and integer/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: local declaration of 'tableView' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:142: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct GroupCell *'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:163: warning: 'GroupCell' may not respond to '-expanded:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: local declaration of 'tableView' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:184: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct WbCell *'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController tableView:didSelectRowAtIndexPath:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:219: warning: 'RootViewController' may not respond to '-convertIndexPathToID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:220: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController actionSheet:clickedButtonAtIndex:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:237: warning: 'RootViewController' may not respond to '-loading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:240: warning: 'RootViewController' may not respond to '-deleteMandant:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:244: warning: 'RootViewController' may not respond to '-showAlertWithTitle:andMessage:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:246: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:258: warning: 'RootViewController' may not respond to '-loading'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:263: warning: 'RootViewController' may not respond to '-moveWbWithID:toGroupWithID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btMandantClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:272: warning: class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btAddGroupClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:290: warning: 'RootViewController' may not respond to '-addGroup:withExpanded:andPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btEditClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:295: warning: 'RootViewController' may not respond to '-openEditGroupNameView'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDeleteClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:300: warning: 'RootViewController' may not respond to '-deleteGroupWithID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btOKClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:304: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController btDownClicked:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:315: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:319: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:321: warning: 'RootViewController' may not respond to '-changePositionOfGroupWithID:andGroupWithID:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changePositionOfGroupWithID:andGroupWithID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:348: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController showAlertWithTitle:andMessage:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:388: warning: local declaration of 'errorAlert' hides instance variable/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController convertIndexPathToID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:399: warning: 'RootViewController' may not respond to '-getIdFromSection:andRow:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController getIdFromSection:andRow:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: 'RootViewController' may not respond to '-sectionOfPosition:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:405: warning: comparison between pointer and integer/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:421: warning: control reaches end of non-void function/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController textFieldShouldReturn:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:425: warning: 'RootViewController' may not respond to '-changeGroupName:atId:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController openEditGroupNameView]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:431: warning: class 'RootViewController' does not implement the 'UITextFieldDelegate' protocol/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController updateWbWithURL:inMandant:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:453: warning: incompatible Objective-C types 'struct NSString *', expected 'struct NSURL *' when passing argument 1 of 'initWithURL:' from distinct Objective-C type/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:454: warning: 'RssReader' may not respond to '-fetch'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:455: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController refreshWB]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:555: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:543: warning: unused variable 'mandant'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController moveWbWithID:toGroupWithID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:565: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteMandant:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:581: warning: 'RootViewController' may not respond to '-getMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:582: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addMandant:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:597: warning: 'RssReader' may not respond to '-setURL:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:598: warning: 'RssReader' may not respond to '-fetch'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:599: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:604: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:623: warning: 'RootViewController' may not respond to '-getMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:624: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:609: warning: unused variable 'nProcessInWB'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:608: warning: unused variable 'wbRss'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController deleteGroupWithID:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:643: warning: 'RootViewController' may not respond to '-getWbList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:644: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController addGroup:withExpanded:andPosition:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:656: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController changeGroupName:atId:]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:670: warning: 'RootViewController' may not respond to '-getGroupList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m: In function '-[RootViewController syncMandantList]':/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:680: warning: 'RootViewController' may not respond to '-getMandantList'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:683: warning: 'RssReader' may not respond to '-setURL:'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:684: warning: 'RssReader' may not respond to '-fetch'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:685: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: 'RssReader' may not respond to '-getNumberOfItem'/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:689: warning: initialization makes integer from pointer without a cast/Users/AoI/Documents/RSSReader/Classes/RootViewController.m:729: warning: 'RootViewController' may not respond to '-getMandantList'72(22@50"'RootViewController' may not respond to '-loading'316876778#110#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)316876778#234#119#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#18#0#18#0#0"0(22@58"'RootViewController' may not respond to '-syncMandantList'316876778#680#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#51#0#51#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876778#812#129#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#52#0#52#0#26"'*' may not respond to '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876778#941#126#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#53#0#53#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-getProcessList'316876778#1067#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#54#0#54#0#26"'*' may not respond to '*'0(22@57"Local declaration of 'btAddGroup' hides instance variable316876778#1198#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#62#0#62#0#0"0(22@56"Local declaration of 'btMandant' hides instance variable316876778#1329#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#62#0#62#0#0"0(22@54"'RootViewController' may not respond to '-stopLoading'316876778#1459#128#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#69#0#69#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876778#1718#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#111#0#111#0#26"'*' may not respond to '*'0(22@38"Comparison between pointer and integer316876778#1854#113#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#111#0#111#0#0"0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876778#2098#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#134#0#134#0#26"'*' may not respond to '*'0(22@38"Comparison between pointer and integer316876778#2234#113#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#134#0#134#0#0"0(22@56"Local declaration of 'tableView' hides instance variable316876778#2347#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#142#0#142#0#0"0(22@101"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct GroupCell *'316876778#2478#176#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#142#0#142#0#61"incompatible Objective-C types initializing '*', expected '*'0(22@43"'GroupCell' may not respond to '-expanded:'316876778#2654#118#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#163#0#163#0#26"'*' may not respond to '*'0(22@56"Local declaration of 'tableView' hides instance variable316876778#2772#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#184#0#184#0#0"0(22@98"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct WbCell *'316876778#2903#173#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#184#0#184#0#61"incompatible Objective-C types initializing '*', expected '*'0(22@64"'RootViewController' may not respond to '-convertIndexPathToID:'316876778#3209#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#219#0#219#0#26"'*' may not respond to '*'0(22@82"Class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol316876778#3348#157#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#220#0#220#0#45"class '*' does not implement the '*' protocol0(22@50"'RootViewController' may not respond to '-loading'316876778#3637#125#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#237#0#237#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-deleteMandant:'316876778#3762#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#240#0#240#0#26"'*' may not respond to '*'0(22@73"'RootViewController' may not respond to '-showAlertWithTitle:andMessage:'316876778#3894#148#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#244#0#244#0#26"'*' may not respond to '*'0(22@82"Class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol316876778#4042#157#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#246#0#246#0#45"class '*' does not implement the '*' protocol0(22@50"'RootViewController' may not respond to '-loading'316876778#4199#125#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#258#0#258#0#26"'*' may not respond to '*'0(22@70"'RootViewController' may not respond to '-moveWbWithID:toGroupWithID:'316876778#4324#145#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#263#0#263#0#26"'*' may not respond to '*'0(22@82"Class 'RootViewController' does not implement the 'UIActionSheetDelegate' protocol316876778#4585#157#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#272#0#272#0#45"class '*' does not implement the '*' protocol0(22@77"'RootViewController' may not respond to '-addGroup:withExpanded:andPosition:'316876778#4859#152#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#290#0#290#0#26"'*' may not respond to '*'0(22@64"'RootViewController' may not respond to '-openEditGroupNameView'316876778#5124#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#295#0#295#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-deleteGroupWithID:'316876778#5378#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#300#0#300#0#26"'*' may not respond to '*'0(22@64"'RootViewController' may not respond to '-changeGroupName:atId:'316876778#5625#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#304#0#304#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876778#5877#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#315#0#315#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876778#6013#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#315#0#315#0#0"0(22@67"'RootViewController' may not respond to '-getIdFromSection:andRow:'316876778#6144#142#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#319#0#319#0#26"'*' may not respond to '*'0(22@86"'RootViewController' may not respond to '-changePositionOfGroupWithID:andGroupWithID:'316876778#6286#161#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#321#0#321#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876778#6589#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#348#0#348#0#26"'*' may not respond to '*'0(22@57"Local declaration of 'errorAlert' hides instance variable316876778#6848#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#388#0#388#0#0"0(22@67"'RootViewController' may not respond to '-getIdFromSection:andRow:'316876778#7100#142#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#399#0#399#0#26"'*' may not respond to '*'0(22@61"'RootViewController' may not respond to '-sectionOfPosition:'316876778#7365#136#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#405#0#405#0#26"'*' may not respond to '*'0(22@38"Comparison between pointer and integer316876778#7501#113#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#405#0#405#0#0"0(22@40"Control reaches end of non-void function316876778#7614#115#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#421#0#421#0#40"control reaches end of non-void function0(22@64"'RootViewController' may not respond to '-changeGroupName:atId:'316876778#7850#139#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#425#0#425#0#26"'*' may not respond to '*'0(22@80"Class 'RootViewController' does not implement the 'UITextFieldDelegate' protocol316876778#8109#155#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#431#0#431#0#45"class '*' does not implement the '*' protocol0(22@150"Incompatible Objective-C types 'struct NSString *', expected 'struct NSURL *' when passing argument 1 of 'initWithURL:' from distinct Objective-C type316876778#8389#225#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#453#0#453#0#0"0(22@39"'RssReader' may not respond to '-fetch'316876778#8614#114#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#454#0#454#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876778#8728#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#455#0#455#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876778#8852#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#455#0#455#0#0"0(22@52"'RootViewController' may not respond to '-getWbList'316876778#9091#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#555#0#555#0#26"'*' may not respond to '*'0(22@25"Unused variable 'mandant'316876778#9218#100#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#543#0#543#0#19"unused variable '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876778#9444#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#565#0#565#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-getMandantList'316876778#9684#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#581#0#581#0#26"'*' may not respond to '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876778#9816#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#582#0#582#0#26"'*' may not respond to '*'0(22@41"'RssReader' may not respond to '-setURL:'316876778#10053#116#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#597#0#597#0#26"'*' may not respond to '*'0(22@39"'RssReader' may not respond to '-fetch'316876778#10169#114#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#598#0#598#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876778#10283#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#599#0#599#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876778#10407#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#604#0#604#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876778#10531#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#604#0#604#0#0"0(22@57"'RootViewController' may not respond to '-getMandantList'316876778#10662#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#623#0#623#0#26"'*' may not respond to '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876778#10794#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#624#0#624#0#26"'*' may not respond to '*'0(22@30"Unused variable 'nProcessInWB'316876778#10921#105#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#609#0#609#0#19"unused variable '*'0(22@23"Unused variable 'wbRss'316876778#11026#98#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#608#0#608#0#19"unused variable '*'0(22@52"'RootViewController' may not respond to '-getWbList'316876778#11241#127#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#643#0#643#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876778#11368#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#644#0#644#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876778#11631#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#656#0#656#0#26"'*' may not respond to '*'0(22@55"'RootViewController' may not respond to '-getGroupList'316876778#11881#130#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#670#0#670#0#26"'*' may not respond to '*'0(22@57"'RootViewController' may not respond to '-getMandantList'316876778#12125#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#680#0#680#0#26"'*' may not respond to '*'0(22@41"'RssReader' may not respond to '-setURL:'316876778#12257#116#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#683#0#683#0#26"'*' may not respond to '*'0(22@39"'RssReader' may not respond to '-fetch'316876778#12373#114#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#684#0#684#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876778#12487#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#685#0#685#0#26"'*' may not respond to '*'0(22@49"'RssReader' may not respond to '-getNumberOfItem'316876778#12611#124#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#689#0#689#0#26"'*' may not respond to '*'0(22@56"Initialization makes integer from pointer without a cast316876778#12735#131#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#689#0#689#0#0"0(22@57"'RootViewController' may not respond to '-getMandantList'316876778#12866#132#0(6@59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m316870016#729#0#729#0#26"'*' may not respond to '*'0(0#0#59"/Users/AoI/Documents/RSSReader/Classes/RootViewController.m8620000576#1712"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/RootViewController.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RootViewController.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RssReader.o /Users/AoI/Documents/RSSReader/Classes/RssReader.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876778.778766
+e316876778.898773
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RssReader.o
+x/Users/AoI/Documents/RSSReader/Classes/RssReader.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader fetch]':
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: 'RssReader' may not respond to '-urlEncode:'
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: (Messages without a matching method signature
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: will be assumed to return 'id' and accept
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: '...' as arguments.)
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:19: warning: 'RssReader' may not respond to '-parse'
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader parse]':
+o/Users/AoI/Documents/RSSReader/Classes/RssReader.m:24: warning: class 'RssReader' does not implement the 'NSXMLParserDelegate' protocol
+lSLF07#2@58"Compile /Users/AoI/Documents/RSSReader/Classes/RssReader.m316876778#316876778#0(822"/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader fetch]':/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: 'RssReader' may not respond to '-urlEncode:'/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: (Messages without a matching method signature/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: will be assumed to return 'id' and accept/Users/AoI/Documents/RSSReader/Classes/RssReader.m:18: warning: '...' as arguments.)/Users/AoI/Documents/RSSReader/Classes/RssReader.m:19: warning: 'RssReader' may not respond to '-parse'/Users/AoI/Documents/RSSReader/Classes/RssReader.m: In function '-[RssReader parse]':/Users/AoI/Documents/RSSReader/Classes/RssReader.m:24: warning: class 'RssReader' does not implement the 'NSXMLParserDelegate' protocol4(22@44"'RssReader' may not respond to '-urlEncode:'316876778#86#109#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)316876778#195#110#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#18#0#18#0#0"0(22@39"'RssReader' may not respond to '-parse'316876778#496#104#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#19#0#19#0#26"'*' may not respond to '*'0(22@71"Class 'RssReader' does not implement the 'NSXMLParserDelegate' protocol316876778#686#136#0(6@50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m316713984#24#0#24#0#45"class '*' does not implement the '*' protocol0(0#0#50"/Users/AoI/Documents/RSSReader/Classes/RssReader.m8621757312#1694"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/RssReader.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RssReader.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/WbCell.o /Users/AoI/Documents/RSSReader/Classes/WbCell.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876778.617308
+e316876778.778639
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/WbCell.o
+x/Users/AoI/Documents/RSSReader/Classes/WbCell.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell initWithFrame:reuseIdentifier:]':
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m:8: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell layoutSubviews]':
+o/Users/AoI/Documents/RSSReader/Classes/WbCell.m:43: warning: unused variable 'frame'
+lSLF07#2@55"Compile /Users/AoI/Documents/RSSReader/Classes/WbCell.m316876778#316876778#0(542"/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell initWithFrame:reuseIdentifier:]':/Users/AoI/Documents/RSSReader/Classes/WbCell.m:8: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)/Users/AoI/Documents/RSSReader/Classes/WbCell.m: In function '-[WbCell layoutSubviews]':/Users/AoI/Documents/RSSReader/Classes/WbCell.m:43: warning: unused variable 'frame'2(22@202"'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)316876778#105#263#0(6@47"/Users/AoI/Documents/RSSReader/Classes/WbCell.m316707674#8#0#8#0#33"'*' is deprecated (declared at *)0(22@23"Unused variable 'frame'316876778#457#85#0(6@47"/Users/AoI/Documents/RSSReader/Classes/WbCell.m316707674#43#0#43#0#19"unused variable '*'0(0#0#47"/Users/AoI/Documents/RSSReader/Classes/WbCell.m8624157632#1688"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/Classes/WbCell.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/WbCell.o0#
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/WbViewController.o /Users/AoI/Documents/RSSReader/Classes/WbViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/XMLReader.o /Users/AoI/Documents/RSSReader/Classes/XMLReader.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/main.o /Users/AoI/Documents/RSSReader/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876777.860941
+e316876777.952141
+r1
+xCompileC
+xbuild/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/main.o
+x/Users/AoI/Documents/RSSReader/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/AoI/Documents/RSSReader/main.m316876777#316876777#0(0"0(0#0#37"/Users/AoI/Documents/RSSReader/main.m8620342720#1676"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -include /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch -c /Users/AoI/Documents/RSSReader/main.m -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/AoI/Documents/RSSReader/MainWindow.xib
+s316876775.060855
+e316876775.738746
+r1
+xCompileXIB
+x/Users/AoI/Documents/RSSReader/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib316876775#316876775#0(0"0(0#0#45"/Users/AoI/Documents/RSSReader/MainWindow.xib8622216960#520"    cd /Users/AoI/Documents/RSSReader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/MainWindow.nib /Users/AoI/Documents/RSSReader/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/AoI/Documents/RSSReader/RootViewController.xib
+s316876775.061945
+e316876775.662544
+r1
+xCompileXIB
+x/Users/AoI/Documents/RSSReader/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib316876775#316876775#0(0"0(0#0#53"/Users/AoI/Documents/RSSReader/RootViewController.xib8622028864#536"    cd /Users/AoI/Documents/RSSReader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RootViewController.nib /Users/AoI/Documents/RSSReader/RootViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCopyPNGFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon57.png images/icon57.png
+s316879687.617988
+e316879687.783163
+r1
+xCopyPNGFile
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon57.png
+ximages/icon57.png
+lSLF07#2@75"CopyPNGFile build/Debug-iphoneos/RSSReader.app/icon57.png images/icon57.png316879687#316879687#0(0"0(0#0#48"/Users/AoI/Documents/RSSReader/images/icon57.png8624131136#545"    cd /Users/AoI/Documents/RSSReader    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/AoI/Documents/RSSReader/images/icon57.png /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon57.png0#
+
+CCopyPNGFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon72.png images/icon72.png
+s316879687.619219
+e316879687.814192
+r1
+xCopyPNGFile
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon72.png
+ximages/icon72.png
+lSLF07#2@75"CopyPNGFile build/Debug-iphoneos/RSSReader.app/icon72.png images/icon72.png316879687#316879687#0(0"0(0#0#48"/Users/AoI/Documents/RSSReader/images/icon72.png8623887104#545"    cd /Users/AoI/Documents/RSSReader    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/AoI/Documents/RSSReader/images/icon72.png /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/icon72.png0#
+
+CCopyPNGFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/segment.png "../../Dropbox/_Document/RSS Reader Doc/segment.png"
+r0
+
+CCopyPNGFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/thumbnail.png images/thumbnail.png
+r0
+
+CCpResource build/Debug-iphoneos/RSSReader.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s316876775.005656
+e316876775.060738
+r1
+xCpResource
+xbuild/Debug-iphoneos/RSSReader.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist316876775#316876775#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8624305312#480"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app0#
+
+CCpResource build/Debug-iphoneos/RSSReader.app/arrow_doc.jpg images/arrow_doc.jpg
+s316876775.662655
+e316876775.725346
+r1
+xCpResource
+xbuild/Debug-iphoneos/RSSReader.app/arrow_doc.jpg
+ximages/arrow_doc.jpg
+lSLF07#2@25"Copy images/arrow_doc.jpg316876775#316876775#0(0"0(0#0#51"/Users/AoI/Documents/RSSReader/images/arrow_doc.jpg8623613120#442"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/AoI/Documents/RSSReader/images/arrow_doc.jpg /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app0#
+
+CCpResource build/Debug-iphoneos/RSSReader.app/arrow_ngang.jpg images/arrow_ngang.jpg
+s316876775.663517
+e316876775.725609
+r1
+xCpResource
+xbuild/Debug-iphoneos/RSSReader.app/arrow_ngang.jpg
+ximages/arrow_ngang.jpg
+lSLF07#2@27"Copy images/arrow_ngang.jpg316876775#316876775#0(0"0(0#0#53"/Users/AoI/Documents/RSSReader/images/arrow_ngang.jpg8622144608#444"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/AoI/Documents/RSSReader/images/arrow_ngang.jpg /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app0#
+
+CCpResource build/Debug-iphoneos/RSSReader.app/db_RSSReader.sqlite db_RSSReader.sqlite
+s316876775.664234
+e316876775.669964
+r1
+xCpResource
+xbuild/Debug-iphoneos/RSSReader.app/db_RSSReader.sqlite
+xdb_RSSReader.sqlite
+lSLF07#2@24"Copy db_RSSReader.sqlite316876775#316876775#0(0"0(0#0#50"/Users/AoI/Documents/RSSReader/db_RSSReader.sqlite8622016256#441"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/AoI/Documents/RSSReader/db_RSSReader.sqlite /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app0#
+
+CCpResource build/Debug-iphoneos/RSSReader.app/person.proto Classes/thinh/person.proto
+r0
+
+CCpResource build/Debug-iphoneos/RSSReader.app/segments.xml "../../Dropbox/_Document/RSS Reader Doc/segments.xml"
+r0
+
+CCreateUniversalBinary /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader normal "armv6 armv7"
+s316876779.124770
+e316876779.204454
+r1
+xCreateUniversalBinary
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader
+xnormal
+xarmv6 armv7
+lSLF07#2@87"CreateUniversalBinary build/Debug-iphoneos/RSSReader.app/RSSReader normal "armv6 armv7"316876779#316876779#0(0"0(0#0#42"/Users/AoI/Documents/RSSReader/armv6 armv78623648000#502"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader -output /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader0#
+
+CGenerateDSYMFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app.dSYM /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader
+s316876779.204593
+e316876779.332406
+r1
+xGenerateDSYMFile
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app.dSYM
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader
+lSLF07#2@101"GenerateDSYMFile build/Debug-iphoneos/RSSReader.app.dSYM build/Debug-iphoneos/RSSReader.app/RSSReader316876779#316876779#0(0"0(0#0#75"/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader8599222848#344"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/RSSReader -o /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app.dSYM0#
+
+CLd /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader normal armv6
+s316876778.063154
+e316876778.664566
+r1
+xLd
+x/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader
+xnormal
+xarmv6
+lSLF07#2@119"Link /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader316876778#316876778#0(0"0(0#0#0"8621707136#843"    cd /Users/AoI/Documents/RSSReader    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -filelist /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv6/RSSReader0#
+
+CLd /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader normal armv7
+s316876778.898888
+e316876779.124634
+r1
+xLd
+x/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader
+xnormal
+xarmv7
+lSLF07#2@119"Link /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader316876778#316876779#0(0"0(0#0#0"8623865472#843"    cd /Users/AoI/Documents/RSSReader    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -filelist /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/Objects-normal/armv7/RSSReader0#
+
+CProcessInfoPlistFile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/Info.plist RSSReader-Info.plist
+s316879687.561595
+e316879687.602958
+r1
+xProcessInfoPlistFile
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/Info.plist
+xRSSReader-Info.plist
+lSLF07#2@28"Process RSSReader-Info.plist316879687#316879687#0(0"0(0#0#51"/Users/AoI/Documents/RSSReader/RSSReader-Info.plist8621544832#538"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RSSReader-Info.plist -genpkginfo /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/ResourceRules.plist -o /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/Info.plist0#
+
+CProcessPCH /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch.gch RSSReader_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316876775.738897
+e316876777.060568
+r1
+xProcessPCH
+x/var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch.gch
+xRSSReader_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile RSSReader_Prefix.pch316876775#316876777#0(0"0(0#0#51"/Users/AoI/Documents/RSSReader/RSSReader_Prefix.pch8619336032#1580"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv6 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -c /Users/AoI/Documents/RSSReader/RSSReader_Prefix.pch -o /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-bqjyljyuhmuitcdglrlpecrzbfvj/RSSReader_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-eysnvezalnacxsdxypbbdmcqpqgu/RSSReader_Prefix.pch.gch RSSReader_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fpxguoxvnudjwtdmlwkmhlpoearq/RSSReader_Prefix.pch.gch RSSReader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch.gch RSSReader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316876775.739977
+e316876777.106922
+r1
+xProcessPCH
+x/var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch.gch
+xRSSReader_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile RSSReader_Prefix.pch316876775#316876777#0(0"0(0#0#51"/Users/AoI/Documents/RSSReader/RSSReader_Prefix.pch8618829216#1580"    cd /Users/AoI/Documents/RSSReader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-generated-files.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-own-target-headers.hmap -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-all-target-headers.hmap -iquote /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader-project-headers.hmap -F/Users/AoI/Documents/RSSReader/build/Debug-iphoneos -I/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/include -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources/armv7 -I/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/DerivedSources -c /Users/AoI/Documents/RSSReader/RSSReader_Prefix.pch -o /var/folders/ni/niTCcBOMEiCkwh7n71ngyE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSSReader_Prefix-fzzgdcbjiowjyeberoqvuxnqhmmp/RSSReader_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/AoI/Library/MobileDevice/Provisioning Profiles/036EA1F7-C5C5-4B6A-AA1C-4E1A999B5B38.mobileprovision" /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision
+s316876779.332524
+e316876779.337254
+r1
+xProcessProductPackaging
+x/Users/AoI/Library/MobileDevice/Provisioning Profiles/036EA1F7-C5C5-4B6A-AA1C-4E1A999B5B38.mobileprovision
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision
+lSLF07#2@192"ProcessProductPackaging "/Users/AoI/Library/MobileDevice/Provisioning Profiles/036EA1F7-C5C5-4B6A-AA1C-4E1A999B5B38.mobileprovision" build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision316876779#316876779#0(0"0(0#0#90"/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision8622383616#407"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/AoI/Library/MobileDevice/Provisioning Profiles/036EA1F7-C5C5-4B6A-AA1C-4E1A999B5B38.mobileprovision" -o /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Users/AoI/Library/MobileDevice/Provisioning Profiles/3BD4EAE2-692A-4F5B-B670-21C5DF5EDF1D.mobileprovision" /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent
+s316879687.827481
+e316879687.861721
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent
+lSLF07#2@181"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent316879687#316879687#0(0"0(0#0#99"/Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent8623955360#422"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/AoI/Documents/RSSReader/build/RSSReader.build/Debug-iphoneos/RSSReader.build/RSSReader.xcent0#
+
+CTouch /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app
+s316879687.822293
+e316879687.827372
+r1
+xTouch
+x/Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app
+lSLF07#2@71"Touch /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app316879687#316879687#0(0"0(0#0#0"8619755360#250"    cd /Users/AoI/Documents/RSSReader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/AoI/Documents/RSSReader/build/Debug-iphoneos/RSSReader.app0#
+

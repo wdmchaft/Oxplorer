@@ -1,0 +1,128 @@
+#import "TimeConverter.h"
+
+
+@implementation TimeConverter
+
++(NSString*)convert:(NSString*)input{
+	//TEST MODE
+	//input=@"Sun, 24 Apr 2011 14:03:21 +0700";
+	
+	NSString *result=@"";
+	NSLog(@" INPUT CONVERT == %@",input);
+	
+	// GET SERVER DATE AND LOCAL DATE
+	NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+	[dateFormatter setDateFormat:@"EEE, dd MMM yyyy HH:mm:ss ZZZ"];	
+	NSDate *serverDate=[dateFormatter dateFromString:input];	
+	NSDate *localDate=[NSDate date];	
+	NSLog(@" TEST SERVER = %@",[dateFormatter stringFromDate:serverDate]);
+	NSLog(@" TEST LOCAL = %@",[dateFormatter stringFromDate:localDate]);
+	/*
+	 */
+	//NSUInteger unitFlags = NSHourCalendarUnit | NSMinuteCalendarUnit;
+	NSLog(@"DB1");
+	NSDateFormatter *df=[[NSDateFormatter alloc] init];
+	int difMin=[self minutesFrom:serverDate To:localDate];
+	int difHour=[self hoursFrom:serverDate To:localDate];
+	int difDay=[self daysFrom:serverDate To:localDate];
+	int difMonth=[self monthsFrom:serverDate To:localDate];
+	int difYear=[self yearsFrom:serverDate To:localDate];
+	int serverHour=[self hourOfDate:serverDate];
+	int serverMin=[self minuteOfDate:serverDate];
+	
+	if (difMin<60) result=[NSString stringWithFormat:@"%@ minute%@ ago",difMin>1?[NSString stringWithFormat:@"%d",difMin]:@"A",difMin>1?@"s":@""];		 
+	else if	(difHour<24) result=[NSString stringWithFormat:@"%@ hour%@ ago",difHour>1?[NSString stringWithFormat:@"%d",difHour]:@"An",difHour>1?@"s":@""];		 
+	else if (difHour<48) result=[NSString stringWithFormat:@"%d:%d Yesterday",serverHour,serverMin];
+	else if (difDay<7) result=[NSString stringWithFormat:@"%d:%d %@",serverHour,serverMin,[self weekdayOfDate:serverDate]];
+	else if (difDay<14) result=[NSString stringWithFormat:@"%d days ago",difDay];		 
+	else if (difDay<21) result=@"2 weeks ago";		 
+	else if (difDay<28) result=@"3 weeks ago";		 
+	else if (difMonth<12) result=[NSString stringWithFormat:@"%@ month%@ ago",difMonth>1?[NSString stringWithFormat:@"%d",difMonth]:@"A",difMonth>1?@"s":@""];		 
+	else if (difMonth<24) result=@"Last year";
+	else result=[NSString stringWithFormat:@"%d years ago",difYear];		 	
+	
+	NSLog(@"RESULT = %@",result);
+	return result;
+}
+
++(int)hourOfDate:(NSDate*)input{
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *components = [calendar components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:input];
+	return [components hour];
+}
++(int)minuteOfDate:(NSDate*)input{
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *components = [calendar components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:input];
+	return [components minute];
+}
++(NSString*)weekdayOfDate:(NSDate*)input{
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *components = [calendar components:NSWeekdayCalendarUnit fromDate:input];
+	return [self getWeekDayInText:[components weekday]];
+}
+
++(int)yearsFrom:(NSDate*)fromDate To:(NSDate*)toDate{
+	NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *components = [gregorianCalendar components:NSYearCalendarUnit fromDate:fromDate toDate:toDate options:0];
+	[gregorianCalendar release];
+	return [components year];
+}
++(int)monthsFrom:(NSDate*)fromDate To:(NSDate*)toDate{
+	NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *components = [gregorianCalendar components:NSMonthCalendarUnit fromDate:fromDate toDate:toDate options:0];
+	[gregorianCalendar release];
+	return [components month];
+}
++(int)daysFrom:(NSDate*)fromDate To:(NSDate*)toDate{	
+	NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *components = [gregorianCalendar components:NSDayCalendarUnit fromDate:fromDate toDate:toDate options:0];
+	[gregorianCalendar release];
+	return [components day];
+}
++(int)hoursFrom:(NSDate*)fromDate To:(NSDate*)toDate{
+	NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *components = [gregorianCalendar components:NSHourCalendarUnit fromDate:fromDate toDate:toDate options:0];
+	[gregorianCalendar release];
+	return [components hour];
+}
++(int)minutesFrom:(NSDate*)fromDate To:(NSDate*)toDate{
+	NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *components = [gregorianCalendar components:NSMinuteCalendarUnit fromDate:fromDate toDate:toDate options:0];
+	[gregorianCalendar release];
+	return [components minute];
+}
+
++(NSString *)getWeekDayInText:(int)input{
+	if (input==1) return @"Sunday";
+	else if (input==2) return @"Monday";
+	else if (input==3) return @"Tuesday";
+	else if (input==4) return @"Wednesday";
+	else if (input==5) return @"Thursday";
+	else if (input==6) return @"Friday";
+	else if (input==7) return @"Saturday";
+}
++(int)getWeekDayInNumber:(NSString *)input{
+	if ([input isEqualToString:@"Sun"]) return 1;
+	else if ([input isEqualToString:@"Mon"]) return 2;
+	else if ([input isEqualToString:@"Tue"]) return 3;
+	else if ([input isEqualToString:@"Wed"]) return 4;
+	else if ([input isEqualToString:@"Thu"]) return 5;
+	else if ([input isEqualToString:@"Fri"]) return 6;
+	else if ([input isEqualToString:@"Sat"]) return 7;
+}
+
++(int)getMonthInNumber:(NSString*)input{
+	if ([[input uppercaseString] isEqualToString:@"JAN"]) return 1;
+	else if ([[input uppercaseString] isEqualToString:@"FEB"]) return 2; 
+	else if ([[input uppercaseString] isEqualToString:@"MAR"]) return 3; 
+	else if ([[input uppercaseString] isEqualToString:@"APR"]) return 4; 
+	else if ([[input uppercaseString] isEqualToString:@"MAY"]) return 5; 
+	else if ([[input uppercaseString] isEqualToString:@"JUN"]) return 6; 
+	else if ([[input uppercaseString] isEqualToString:@"JUL"]) return 7; 
+	else if ([[input uppercaseString] isEqualToString:@"AUG"]) return 8; 
+	else if ([[input uppercaseString] isEqualToString:@"SEP"]) return 9; 
+	else if ([[input uppercaseString] isEqualToString:@"OCT"]) return 10; 
+	else if ([[input uppercaseString] isEqualToString:@"NOV"]) return 11; 
+	else if ([[input uppercaseString] isEqualToString:@"DEC"]) return 12; 	
+}
+@end

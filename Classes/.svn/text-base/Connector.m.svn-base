@@ -1,0 +1,634 @@
+#import "Connector.h"
+#import "XMLReader.h"
+#import "ThatkoLib.h"
+
+@implementation Connector 
+
+NSString *const MODE=@"PBF"; // PBF/XML/TEST
+NSString *rootUrl=@"http://174.143.148.49/Oxplorer_TestData_XML/";
+NSString *confUrl=@"https://my-ea.oxseed.net/"; //http://192.168.16.121:8888/
+static NSMutableArray *ml,*db_ml,*db_wbl,*db_pl; // Class variables (lists)
+static sqlite3 *database;
+
++(void)initWithDB:(sqlite3*)input{
+	database=input;
+}
++(NSMutableArray*)ml{
+	return ml;
+}
+
++(void)TEST{
+	for (Mandant *m in ml) {
+		NSLog(@"[MANDANT] %@",m.name);
+		for (WorkBasket *wb in m.arrWb) {
+			NSLog(@"--[WB] %@",wb.name);
+			for (MyProcess *p in wb.arrProcess) {
+				NSLog(@"----[PROCESS] %@ - read:%d",p.name,(int)p.hasRead);
+			}			
+		}
+	}
+}
+
+// ==================================================================================================
+#										pragma mark INDEX
+// ==================================================================================================
++(void)addIndexToDb:(MyIndex*)selectedIndex docId:(NSString*)docId value:(NSString*)ocrValue segmentId:(int)selectedSegmentId{
+
+	// CHECK IF THIS INDEX EXIST IN LOCAL DB OR NOT
+	BOOL exist=FALSE;
+	sql="select * from tb_Index where xID=? and xDocID=?";
+	sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+	sqlite3_bind_text(compiledSql, 1, [selectedIndex.id UTF8String], -1, SQLITE_TRANSIENT);
+	sqlite3_bind_text(compiledSql, 2, [docId UTF8String], -1, SQLITE_TRANSIENT);
+	while(sqlite3_step(compiledSql) == SQLITE_ROW) {
+		exist=TRUE;
+		break;
+	}				
+
+	if (!exist) {
+		NSLog(@"INSERT!!!!!");
+		sql = "INSERT INTO tb_Index(xID,xDocID,xName,xValue,xSegmentID) VALUES (?,?,?,?,?)";	
+		sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+		sqlite3_bind_text(compiledSql, 1, [selectedIndex.id UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_bind_text(compiledSql, 2, [docId UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_bind_text(compiledSql, 3, [selectedIndex.name UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_bind_text(compiledSql, 4, [ocrValue UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_bind_int(compiledSql, 5, selectedSegmentId);
+		sqlite3_step(compiledSql);	
+	} else {
+		NSLog(@"UPDATE!!!!!");
+		sql = "UPDATE tb_Index SET xName=?,xValue=?,xSegmentID=? WHERE (xID=? and xDocID=?)";	
+		sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+		sqlite3_bind_text(compiledSql, 1, [selectedIndex.name UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_bind_text(compiledSql, 2, [ocrValue UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_bind_int(compiledSql, 3, selectedSegmentId);		
+		sqlite3_bind_text(compiledSql, 4, [selectedIndex.id UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_bind_text(compiledSql, 5, [docId UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_step(compiledSql);		
+	}
+}
+
++(NSMutableArray *)getDbIndexListOfDoc:(MyDocument*)doc{
+	NSLog(@"****** GET DB INDEX LIST OF DOC");
+	NSString *docIdPar=doc.id;
+	
+	NSMutableArray *il=[[NSMutableArray array] retain];	//indexList
+	sql = "select * from tb_Index where xDocId=?"; 	
+	sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+	sqlite3_bind_text(compiledSql, 1, [docIdPar UTF8String], -1, SQLITE_TRANSIENT);			
+	while(sqlite3_step(compiledSql) == SQLITE_ROW) {
+		NSString *id=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 0)];
+		NSString *name=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 2)];
+		NSString *value=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 3)];
+		int segmentId=[[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 4)] intValue];		
+		
+		MyIndex *i=[[MyIndex alloc] initWithId:id docId:docIdPar name:name value:value segmentId:segmentId];		
+		[il addObject:i];
+	}
+	sqlite3_finalize(compiledSql);// Release the compiled statement from memory					
+	
+	// add indexes (in doc xml) to dbIndexList if not exists
+	BOOL exists;
+	for	(MyIndex *i1 in doc.arrIndex){
+		exists=FALSE;
+		for (MyIndex *i2 in il){
+			if ([i2.id isEqualToString:i1.id]) {
+				exists=TRUE;
+			}
+		}
+		if (!exists) [il addObject:i1];
+	}	
+	
+	NSLog(@"###### TEST VALUE OF dbIndexList");
+	for	(MyIndex *i in il){
+		NSLog(@" + %@ = %@",i.id,i.value); 
+	}
+	return il;
+}				
+// ==================================================================================================
+#										pragma mark DOCUMENT 
+// ==================================================================================================
++(void)fetchDocumentAndUpdateProcessOfWb:(NSString*)wbId{ // get both Process XML and Document XML for document info (the lower level is page doesn't need to fetch)	
+	for	(Mandant *m in ml){
+		for (WorkBasket *wb in m.arrWb) {			
+			if ([wb.id isEqualToString:wbId]) {
+				NSMutableDictionary* dict=[XMLReader dictionaryForURL:[NSString stringWithFormat:@"%@?content=processList&wbId=%@",rootUrl,wb.id]]; 
+				dict=[dict objectForKey:@"processList"];
+				if ([[dict objectForKey:@"process"] isKindOfClass:[NSArray class]]){
+					int nProcess=[[dict objectForKey:@"process"] count];
+					for (int i=0; i<nProcess; i++) {
+						[self fetchProcessDict:[[dict objectForKey:@"process"] objectAtIndex:i] forWb:wb];
+					}					
+				} else if ([dict objectForKey:@"process"]!=NULL){
+					[self fetchProcessDict:[dict objectForKey:@"process"] forWb:wb];
+				}				
+			}
+		}
+	}
+}
++(void)fetchProcessDict:(NSMutableDictionary*)dict forWb:(WorkBasket*)wb{
+	NSString *id; //commands will be implemented later
+	MyProcess *p;
+	BOOL processExists=FALSE;
+	
+	id=[[dict objectForKey:@"id"] objectForKey:@"text"];
+	
+	for (MyProcess *process in wb.arrProcess) {
+		if ([process.id isEqualToString:id]) {
+			p=process;
+			processExists=TRUE;
+			break;
+		}
+	}
+	if (!processExists) {
+		int pos=[wb.arrProcess count]+1; // start from 1
+		p=[[MyProcess alloc] initWithId:id position:pos];		
+		[wb.arrProcess addObject:p];
+	}
+	p.name=[[dict objectForKey:@"name"] objectForKey:@"text"];
+	p.entryDate=[[dict objectForKey:@"entryDate"] objectForKey:@"text"];
+	p.typeId=[[dict objectForKey:@"typeId"] objectForKey:@"text"];
+	
+	p.arrDoc=[[NSMutableArray alloc] init];		
+	dict=[dict objectForKey:@"docList"];		
+	int nDoc;
+	if ([[dict objectForKey:@"doc"] isKindOfClass:[NSArray class]]){
+		nDoc=[[dict objectForKey:@"doc"] count];
+		for (int i=0; i<nDoc; i++) {
+			MyDocument *d=[self getDocumentOfDict:[[dict objectForKey:@"doc"] objectAtIndex:i]];				
+			[p.arrDoc addObject:d];
+		}
+	} else if ([dict objectForKey:@"item"]==NULL){
+		nDoc=0;
+	} else {
+		nDoc=1;
+		[p.arrDoc addObject:[self getDocumentOfDict:[dict objectForKey:@"doc"]]];
+	}	
+}
+
+
++(MyDocument*)getDocumentOfDict:(NSMutableDictionary*)dictDoc{
+	NSString *id,*name,*typeId;
+	int nPages;
+	id=[[dictDoc objectForKey:@"id"] objectForKey:@"text"];
+	name=[[dictDoc objectForKey:@"name"] objectForKey:@"text"];
+	typeId=[[dictDoc objectForKey:@"typeId"] objectForKey:@"text"];
+	nPages=[[[dictDoc objectForKey:@"nPages"] objectForKey:@"text"] intValue]; 
+	MyDocument *document=[[MyDocument alloc] initWithId:id name:name typeId:typeId nPages:nPages];	
+	
+	NSMutableDictionary *dictIndex=[dictDoc objectForKey:@"indexList"];
+	if ([[dictIndex objectForKey:@"index"] isKindOfClass:[NSArray class]]){
+		int nIndex=[[dictIndex objectForKey:@"index"] count];		
+		for (int i=0; i<nIndex; i++) {			
+			NSDictionary *tmpDict=[[dictIndex objectForKey:@"index"] objectAtIndex:i];
+			MyIndex *index=[[MyIndex alloc] initWithId:[[tmpDict objectForKey:@"id"] objectForKey:@"text"] name:[[tmpDict objectForKey:@"name"] objectForKey:@"text"] value:[[tmpDict objectForKey:@"value"] objectForKey:@"text"] ];
+			[document.arrIndex addObject:index];
+		}
+	} else if ([dictIndex objectForKey:@"index"]!=NULL){ //nIndex=1
+		dictIndex=[dictIndex objectForKey:@"index"];
+		MyIndex *index=[[MyIndex alloc] initWithId:[[dictIndex objectForKey:@"id"] objectForKey:@"text"] name:[[dictIndex objectForKey:@"name"] objectForKey:@"text"] value:[[dictIndex objectForKey:@"value"] objectForKey:@"text"] ];
+		[document.arrIndex addObject:index];		
+	} 	
+	
+	return document;
+}
+
+
+// ==================================================================================================
+#										pragma mark PROCESS
+// ==================================================================================================
++(void)fetchProcessIdListForWorkBasketsOfMandant:(NSString*)mandantId{
+	for (Mandant *m in ml) {
+		if ([m.id isEqualToString:mandantId]) {
+			for (WorkBasket *wb in m.arrWb) {
+				wb.arrProcess=[[NSMutableArray alloc] init];
+				int nProcess=0;
+				
+				NSMutableDictionary *dict=[XMLReader dictionaryForURL:[NSString stringWithFormat:@"%@?content=processIdList&wbId=%@",rootUrl,wb.id]];
+				dict=[dict objectForKey:@"processIdList"];										
+				if ([[dict objectForKey:@"processId"] isKindOfClass:[NSArray class]]){
+					nProcess=[[dict objectForKey:@"processId"] count];
+					for (int i=0; i<nProcess; i++) {
+						NSString *processId=[[[dict objectForKey:@"processId"] objectAtIndex:i] objectForKey:@"text"];
+						int pos=[wb.arrProcess count]+1; // start from 1
+						MyProcess *p=[[MyProcess alloc] initWithId:processId position:pos];
+						[wb.arrProcess addObject:p];
+					}
+				} else if ([dict objectForKey:@"item"]==NULL){
+					nProcess=0;
+				} else {			
+					NSString *processId=[[dict objectForKey:@"processId"] objectForKey:@"text"];
+					MyProcess *p=[[MyProcess alloc] initWithId:processId position:1];				
+					[wb.arrProcess addObject:p];
+				}
+			}
+		}
+	}
+}
++(void)fetchProcessIdListForWorkBaskets{ //of all added mandant 
+	[Connector syncMandant];
+	for (Mandant *m in ml) {
+		if (!m.isAdded) continue;				
+		[Connector fetchProcessIdListForWorkBasketsOfMandant:m.id];
+	}
+}
++(void)syncProcess{
+	[Connector syncMandant];
+	db_pl=[self getProcessListFromDB];
+	
+	// +++++++++++ DELETE PROCESS IN DB WHICH SERVER DOESN'T HAVE
+	int shouldContinue;
+	/* DON'T NEED TO DO THIS, BECAUSE SOME PROCESS WHICH IS READ NEED TO BE KEPT IN DB
+	for (NSDictionary *aP in db_pl) {
+		shouldContinue=FALSE;
+		for (Mandant *m in ml) {					
+			for (int i=0;i<m.arrWb.count;i++){
+				WorkBasket *wb=[m.arrWb	objectAtIndex:i];
+				for (int j=0; j<wb.arrProcess.count; j++) {
+					if ([[[wb.arrProcess objectAtIndex:j] id] isEqualToString:[aP objectForKey:@"ID"]]){				
+						shouldContinue=TRUE;
+						break;
+					}			
+				}
+				if (shouldContinue) break;
+			}
+			if (shouldContinue) break;
+		}
+		if (shouldContinue) continue;
+		NSLog(@"Delete process: %@ because Server doesn't have !",[aP objectForKey:@"ID"]);
+		[self deleteProcess:[aP objectForKey:@"ID"]];
+	}*/
+	
+	// +++++++++++ ADD NEW PROCESS OF SERVER WHICH DB DOESN'T HAVE       [&] CHANGE hasRead 
+	for (Mandant *m in ml){	
+		if (!m.isAdded) continue;
+		//NSLog(@"Xing...mandant: %@",m.id);
+		for (int i=0; i<m.arrWb.count; i++) {		
+			WorkBasket *wb=[m.arrWb objectAtIndex:i];
+			//NSLog(@"Xing...wb: %@",wb.id);
+			for (int j=0; j<wb.arrProcess.count; j++) {
+				MyProcess *p=[wb.arrProcess objectAtIndex:j];
+				//NSLog(@"Xing...process: %@",p.id);				
+				shouldContinue=FALSE;
+				for (NSDictionary *aP in db_pl) {		
+					//NSLog(@"Xing...process (in db): %@",[aP objectForKey:@"ID"]);
+					if ([[p id] isEqualToString:[aP objectForKey:@"ID"]]){
+						//NSLog(@"...equals");
+						shouldContinue=TRUE;
+						if ([[aP objectForKey:@"Read"] isEqualToString:@"1"]){
+							//NSLog(@"...set Read");
+							p.hasRead=TRUE;
+						}
+						if ([[aP objectForKey:@"Position"] intValue]!=p.position){
+							sql = "UPDATE tb_Process SET xPostion=? WHERE xID=?";	
+							sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+							sqlite3_bind_int(compiledSql, 1, p.position);
+							sqlite3_bind_text(compiledSql, 2, [p.id UTF8String], -1, SQLITE_TRANSIENT);	
+							sqlite3_step(compiledSql);							
+						}
+						break;
+					}
+				}
+				if (shouldContinue) continue;
+				sql = "INSERT INTO tb_Process(xID,xRead,xPosition) VALUES(?,0,?)";	
+				sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+				sqlite3_bind_text(compiledSql, 1, [p.id UTF8String], -1, SQLITE_TRANSIENT);	
+				sqlite3_bind_int(compiledSql, 2, p.position);
+				sqlite3_step(compiledSql);
+			}
+		}		
+	}
+	db_pl=[self getWbListFromDB];	
+}
++(NSMutableArray *)getProcessListFromDB{
+	NSMutableArray *pl=[[NSMutableArray array] retain];			
+	sql = "select * from tb_Process"; 
+	if(sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL) == SQLITE_OK) {			
+		while(sqlite3_step(compiledSql) == SQLITE_ROW) {
+			[pl addObject:[NSDictionary dictionaryWithObjectsAndKeys:
+						   [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 0)], @"ID",
+						   [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 2)], @"Read",
+						   [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 9)], @"Position",
+						   nil]];
+		}
+		sqlite3_finalize(compiledSql);// Release the compiled statement from memory					
+	}
+	return pl;
+}
+
+
+// ==================================================================================================
+#										pragma mark WORKBASKET
+// ==================================================================================================
++(void)fetchWorkBasketOfMandant:(NSString *)mandantId{ //ONLY FOR PBF, NOT FOR XML
+	for (Mandant *m in ml) {
+		if ([m.id isEqualToString:mandantId]) {
+			NSLog(@"FETCHING WB OF MANDANT ID = %@",m.id);						
+			NSString *url=[NSString stringWithFormat:@"%@%@/ext/oxplorer?content=wbList&login=admin&pass=oxseed",confUrl,m.id]; //wbList						
+			NSData  *d = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:url]];	
+			NSLog(@"xx1");
+			WbList *pbfWbList;
+			@try { pbfWbList=[WbList parseFromData:d]; }
+			@catch (id theException) {
+				NSLog(@"~~~~~~~~~~ [EXCEPTION] GETTING WB FROM PBF = %@", theException);				
+				continue;
+			} 
+			@finally {}
+			NSLog(@"xx2");
+			for (Wb *wb in [pbfWbList mutableWbList]) {						
+				NSLog(@"xx3");
+				//NSLog(@"*** WB LOOP = %@",wb.id);
+				WorkBasket *myWb=[[WorkBasket alloc] initWithId:[NSString stringWithFormat:@"[%@]%@",m.id,wb.id] name:wb.id type:wb.type lastBuildDate:@"Mon, 10 Jan 2011 11:47:55 -0800"];	
+				myWb.inMandantId=m.id;
+				[m.arrWb addObject:myWb];
+			}
+			NSLog(@"xx4");
+		}
+	}
+}
++(void)fetchWorkBasket{	
+	[Connector syncMandant]; // only fetch WB of added Mandant
+	NSString *url;	
+	int debugCount=0;
+	for (Mandant *m in ml) {						
+		if (!m.isAdded) continue;
+		m.arrWb=[[NSMutableArray alloc] init];
+		int nWB=0;			
+		if ([MODE isEqualToString:@"XML"]) {					
+			NSMutableDictionary *dict=[XMLReader dictionaryForURL:[NSString stringWithFormat:@"%@?content=wbList&mandantId=%@",rootUrl,m.id]];			
+			dict=[dict objectForKey:@"wbList"];
+			
+			if ([[dict objectForKey:@"wb"] isKindOfClass:[NSArray class]]){
+				nWB=[[dict objectForKey:@"wb"] count];
+				for (int i=0; i<nWB; i++) {
+					WorkBasket *wb=[self getWbOfDict:[[dict objectForKey:@"wb"] objectAtIndex:i]];				
+					wb.inMandantId=m.id;
+					[m.arrWb addObject:wb];
+				}
+			} else if ([dict objectForKey:@"wb"]==NULL){
+				nWB=0;
+			} else {
+				nWB=1;
+				WorkBasket *wb=[self getWbOfDict:[dict objectForKey:@"wb"]];
+				wb.inMandantId=m.id;
+				[m.arrWb addObject:wb];
+			}			
+		} else { // PBF		
+			[Connector fetchWorkBasketOfMandant:m.id];			
+		}
+	}
+}
++(void)syncWorkBasket{
+	NSLog(@"### SYNC WB");
+	db_wbl=[self getWbListFromDB];
+	
+	// +++++++++++ DELETE WB IN DB WHICH SERVER DOESN'T HAVE
+	
+	int shouldContinue;
+	for (NSDictionary *aWB in db_wbl) {
+		shouldContinue=FALSE;
+		for (Mandant *m in ml) {					
+			for (int i=0;i<m.arrWb.count;i++){
+				if ([[[m.arrWb objectAtIndex:i] id] isEqualToString:[aWB objectForKey:@"ID"]]){				
+					shouldContinue=TRUE;
+					break;
+				}			
+			}
+			if (shouldContinue) break;
+		}
+		if (shouldContinue) continue;
+		NSLog(@"Delete wb: %@ because Server doesn't have !",[aWB objectForKey:@"ID"]);
+		[self deleteWB:[aWB objectForKey:@"ID"]];
+	}	
+	
+	// +++++++++++ ADD NEW WB OF SERVER WHICH DB DOESN'T HAVE       [&] CHANGE InGroupID 
+	for (Mandant *m in ml){				 
+		for (int i=0; i<m.arrWb.count; i++) {
+			WorkBasket *wb=[m.arrWb objectAtIndex:i];
+			NSLog(@"Xing...wb %@",wb.id);
+			shouldContinue=FALSE;
+			for (NSDictionary *aWB in db_wbl) {		
+				NSLog(@"Xing...wb in db %@",[aWB objectForKey:@"ID"]);
+				if ([[wb id] isEqualToString:[aWB objectForKey:@"ID"]]){
+					shouldContinue=TRUE;
+					wb.inGroupId=[[aWB objectForKey:@"InGroupID"] intValue];
+					break;
+				}
+			}
+			if (shouldContinue) continue;
+			sql = "INSERT INTO tb_WB(xID,xInGroupID) VALUES (?,0)";				
+			sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);			
+			sqlite3_bind_text(compiledSql, 1, [[wb id] UTF8String], -1, SQLITE_TRANSIENT);
+			sqlite3_step(compiledSql);					
+		}		
+	}
+	db_wbl=[self getWbListFromDB];	
+}				
++(NSString *)getNameOfWbID:(NSString*)wbID{
+	for (Mandant *m in ml) {
+		for (WorkBasket *wb in m.arrWb) {
+			if ([wb.id isEqualToString:wbID]) {
+				return wb.name;
+			}
+		}
+	}
+	return nil;
+}
++(WorkBasket*)getWbOfDict:(NSMutableDictionary*)inputDict{
+	NSString *id,*name,*type,*lastBuildDate;
+	id=[[inputDict objectForKey:@"id"] objectForKey:@"text"];
+	name=[[inputDict objectForKey:@"name"] objectForKey:@"text"];
+	type=[[inputDict objectForKey:@"type"] objectForKey:@"text"];
+	lastBuildDate=[[inputDict objectForKey:@"lastBuildDate"] objectForKey:@"text"];
+	return [[WorkBasket alloc] initWithId:id name:name type:type lastBuildDate:lastBuildDate];	
+}
++(NSMutableArray *)getWbListFromDB{
+	NSMutableArray *wbl=[[NSMutableArray array] retain];			
+	sql = "select * from tb_WB"; 
+	if(sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL) == SQLITE_OK) {			
+		while(sqlite3_step(compiledSql) == SQLITE_ROW) {
+			[wbl addObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:
+							[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 0)], @"ID",
+							//[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 1)], @"Name",
+							//[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 2)], @"LastBuildDate",
+							[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 3)], @"InGroupID",
+							//[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 4)], @"InMandant",
+							//[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 5)], @"URL",
+							nil]];
+		}
+		sqlite3_finalize(compiledSql);// Release the compiled statement from memory					
+	}
+	return wbl;
+}						
++(void)deleteWB:(NSString*)wbId{
+	sql = "DELETE FROM tb_WB WHERE xID=?";	
+	sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+	sqlite3_bind_text(compiledSql, 1, [wbId UTF8String], -1, SQLITE_TRANSIENT);
+	sqlite3_step(compiledSql);
+}
+						 
+
+// ==================================================================================================
+#										pragma mark MANDANT
+// ==================================================================================================
++(BOOL)fetchMandantList{
+	ml=[[NSMutableArray alloc] init];	
+	int nMandant;
+	NSString *url;
+		
+	if ([MODE isEqualToString:@"XML"]) {				
+		url=[NSString stringWithFormat:@"%@?content=mandantList",rootUrl];
+		NSDictionary *dict=[XMLReader dictionaryForURL:url];		
+		NSLog(@"DICT = %@",dict);
+		dict=[dict objectForKey:@"mandantList"];		
+		if ([[dict objectForKey:@"mandant"] isKindOfClass:[NSArray class]]){
+			nMandant=[[dict objectForKey:@"mandant"] count];
+			for (int i=0; i<nMandant; i++) {
+				Mandant *m=[self getMandantOfDict:[[dict objectForKey:@"mandant"] objectAtIndex:i]];				
+				[ml addObject:m];				
+			}
+		} else if ([dict objectForKey:@"mandant"]==NULL){
+			nMandant=0;
+			return FALSE; // to avoid deleting mandants in DB
+		} else {
+			nMandant=1;
+			[ml addObject:[self getMandantOfDict:[dict objectForKey:@"mandant"]]];
+		}							
+	} else { // USING PBF	
+		ml=[[NSMutableArray alloc] init];	//Mutable array of Mandant
+		url=[NSString stringWithFormat:@"%@oxseedadmin/ext/oxplorer?content=mandantList&login=admin&pass=oxseed",confUrl]; //MandantList
+		NSData  *d;
+		@try {
+			d = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:url]];
+		}
+		@catch (id theException) {
+			NSLog(@"~~~~~~~~~~ [EXCEPTION] GETTING MANDANT LIST = %@", theException);				
+			return FALSE;
+		} 
+		@finally {}
+		if (!d){
+			NSLog(@"Network Error ???");
+			return FALSE; //NETWORK ERROR
+		}
+		MandantList *pbfMandantList=[MandantList parseFromData:d];
+		for (Mandant *m in [pbfMandantList mutableMandantList]) {						
+			Mandant *mm=[[Mandant alloc] initWithId:[m id] name:[m name]];
+			[ml addObject:mm];
+		}
+		return TRUE;
+		//Mandant *m=[[pbfMandantList mutableMandantList] objectAtIndex:0];
+		//NSLog(@"TEST MandantList = %@",[m id]);
+	}
+}
++(void)syncMandant{
+	db_ml=[self getMandantListFromDB];
+	int nMandant=[ml count];
+	
+	// +++++++++++ DELETE MANDANT IN DB WHICH SERVER DOESN'T HAVE
+	int shouldContinue;
+	for (NSDictionary *aMandant in db_ml) {
+		shouldContinue=FALSE;
+		for (int i=0;i<nMandant;i++){
+			if ([[[ml objectAtIndex:i] id] isEqualToString:[aMandant objectForKey:@"ID"]]){				
+				shouldContinue=TRUE;
+				break;
+			}			
+		}
+		if (shouldContinue) continue;
+		NSLog(@"Delete mandant: %@ because Server doesn't have !",[aMandant objectForKey:@"ID"]);
+		[self deleteMandant:[aMandant objectForKey:@"ID"]];
+	}
+		
+	// +++++++++++ ADD NEW MANDANT OF SERVER WHICH DB DOESN'T HAVE       [&] CHANGE IsAdded value in ML 
+	for (int i=0; i<nMandant; i++) {
+		Mandant *m=[ml objectAtIndex:i];
+		shouldContinue=FALSE;
+		for (NSDictionary *aMandant in db_ml) {		
+			if ([[m id] isEqualToString:[aMandant objectForKey:@"ID"]]){
+				shouldContinue=TRUE;
+				if ([[aMandant objectForKey:@"Added"] isEqualToString:@"1"]) {
+					m.isAdded=TRUE;
+				} else {
+					m.isAdded=FALSE;
+				}
+
+				break;
+			}
+		}
+		if (shouldContinue) continue;
+		sql = "INSERT INTO tb_Mandant(xID,xAdded) VALUES (?,0)";	
+		sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+		sqlite3_bind_text(compiledSql, 1, [[m id] UTF8String], -1, SQLITE_TRANSIENT);
+		sqlite3_step(compiledSql);	
+	}		
+	
+	db_ml=[self getMandantListFromDB];
+}
++(void) deleteMandant:(NSString *)mandantID{
+	sql = "DELETE FROM tb_Mandant WHERE xID=?";	
+	sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+	sqlite3_bind_text(compiledSql, 1, [mandantID UTF8String], -1, SQLITE_TRANSIENT);
+	sqlite3_step(compiledSql);	
+}
++(void) removeMandant:(NSString*)mandantID{
+	NSLog(@"*** Remove mandant");
+	sql = "UPDATE tb_Mandant SET xAdded=0 WHERE xID=?";	
+	sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+	sqlite3_bind_text(compiledSql, 1, [mandantID UTF8String], -1, SQLITE_TRANSIENT);
+	sqlite3_step(compiledSql);	
+	
+	// REMOVE arrWb by re-allocating it
+	for (Mandant *m in ml){
+		if ([m.id isEqualToString:mandantID]) {
+			m.arrWb=[[NSMutableArray alloc] init];			
+		}
+	}
+}
+
++(BOOL)checkMandantAdded:(Mandant*)inputMandant{
+	for (NSDictionary *aDict in db_ml) {
+		if ([[aDict objectForKey:@"ID"] isEqualToString:inputMandant.id]) {
+			if ([[aDict objectForKey:@"Added"] isEqualToString:@"1"]) {
+				return TRUE;
+			} else {
+				return FALSE;
+			}
+			
+		}
+	}
+	return FALSE;
+}
++(Mandant*)getMandantOfDict:(NSMutableDictionary*)inputDict{
+	NSString *id,*name;
+	id=[[inputDict objectForKey:@"id"] objectForKey:@"text"];
+	name=[[inputDict objectForKey:@"name"] objectForKey:@"text"];
+	return [[Mandant alloc] initWithId:id name:name];	
+}
++(NSMutableArray *)getMandantListFromDB{
+	NSMutableArray *ml=[[NSMutableArray array] retain];			
+	sql = "select * from tb_Mandant"; 
+	if(sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL) == SQLITE_OK) {			
+		while(sqlite3_step(compiledSql) == SQLITE_ROW) {
+			[ml addObject:[NSDictionary dictionaryWithObjectsAndKeys:
+						   [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 0)], @"ID",
+						   //[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 1)], @"URL",
+						   [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 2)], @"Added",
+						   //[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledSql, 3)], @"Name",
+						   nil]];
+		}
+		sqlite3_finalize(compiledSql);// Release the compiled statement from memory					
+	}	
+	return ml;
+}
+
++(void) addMandant:(NSString *)mandantID{
+	sql = "UPDATE tb_Mandant SET xAdded=1 WHERE xID=?";	
+	sqlite3_prepare_v2(database, sql, -1, &compiledSql, NULL);
+	sqlite3_bind_text(compiledSql, 1, [mandantID UTF8String], -1, SQLITE_TRANSIENT);
+	sqlite3_step(compiledSql);
+	[Connector fetchWorkBasketOfMandant:mandantID];
+	[Connector fetchProcessIdListForWorkBasketsOfMandant:mandantID];
+}
+
+
+@end

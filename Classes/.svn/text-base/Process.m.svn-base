@@ -1,0 +1,19 @@
+#import "Process.h"
+
+
+@implementation Process
+@synthesize id,name,description,typeId,entryDate,hasRead,nDocs,arrDoc,position;
+
+-(id)initWithId:(NSString*)idPar position:(int)positionPar{
+	self=[super init];
+	if (self) {		
+		self.id=idPar;	
+		self.position=positionPar;
+		self.arrDoc=[[NSMutableArray alloc] init];
+		self.hasRead=FALSE;
+	}
+	return self;
+}
+
+
+@end

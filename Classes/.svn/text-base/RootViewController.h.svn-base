@@ -1,0 +1,20 @@
+#import <UIKit/UIKit.h>
+#import <sqlite3.h>
+#import "EditGroupNameView.h"
+#import "RssReader.h"
+#import "AbstractViewController.h"
+#import "WbViewController.h"
+#import "MandantList.pb.h"
+
+@interface RootViewController : AbstractViewController <UIAlertViewDelegate> {
+	// INTERFACE	
+	UIActivityIndicatorView *spinner2;
+	UIBarButtonItem *btMandant,*btAddGroup,*btMoveWB,*btMore;	
+	EditGroupNameView *vEditGroupName;
+
+	// GENERAL DATA
+	WbViewController *wbViewController;
+	int currentTag;
+	NSString *currentWbID;
+}
+@end

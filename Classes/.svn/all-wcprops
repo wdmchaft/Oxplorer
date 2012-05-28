@@ -1,0 +1,575 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes
+END
+PageSegmentation.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/166/trunk/iOS_Oxplorer/RSSReader/Classes/PageSegmentation.pb.h
+END
+ProcessIdList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/241/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessIdList.pb.m
+END
+SettingFontVC.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/230/trunk/iOS_Oxplorer/RSSReader/Classes/SettingFontVC.h
+END
+MoveWbViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/MoveWbViewController.h
+END
+PageSegmentation.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/166/trunk/iOS_Oxplorer/RSSReader/Classes/PageSegmentation.pb.m
+END
+AbstractViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/264/trunk/iOS_Oxplorer/RSSReader/Classes/AbstractViewController.h
+END
+SettingFontVC.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/230/trunk/iOS_Oxplorer/RSSReader/Classes/SettingFontVC.m
+END
+MoveWbViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/MoveWbViewController.m
+END
+AbstractViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/225/trunk/iOS_Oxplorer/RSSReader/Classes/AbstractViewController.m
+END
+WbCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/WbCell.h
+END
+ProcessViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessViewController.xib
+END
+ProcessCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessCell.xib
+END
+ProcessViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessViewController.h
+END
+WbCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/230/trunk/iOS_Oxplorer/RSSReader/Classes/WbCell.m
+END
+MandantList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/264/trunk/iOS_Oxplorer/RSSReader/Classes/MandantList.pb.h
+END
+ProcessViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessViewController.m
+END
+MandantList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/264/trunk/iOS_Oxplorer/RSSReader/Classes/MandantList.pb.m
+END
+MyProcess.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/MyProcess.h
+END
+ProcessTypeIdList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessTypeIdList.pb.h
+END
+MyProcess.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/MyProcess.m
+END
+Connector.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/264/trunk/iOS_Oxplorer/RSSReader/Classes/Connector.h
+END
+GroupCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/GroupCell.h
+END
+ProcessTypeIdList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessTypeIdList.pb.m
+END
+Connector.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/264/trunk/iOS_Oxplorer/RSSReader/Classes/Connector.m
+END
+GroupCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/225/trunk/iOS_Oxplorer/RSSReader/Classes/GroupCell.m
+END
+DocViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/DocViewController.h
+END
+Index.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/156/trunk/iOS_Oxplorer/RSSReader/Classes/Index.h
+END
+DocViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/264/trunk/iOS_Oxplorer/RSSReader/Classes/DocViewController.m
+END
+Process.xib
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/Process.xib
+END
+CommandList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/202/trunk/iOS_Oxplorer/RSSReader/Classes/CommandList.pb.h
+END
+Index.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/157/trunk/iOS_Oxplorer/RSSReader/Classes/Index.m
+END
+WorkBasket.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/178/trunk/iOS_Oxplorer/RSSReader/Classes/WorkBasket.h
+END
+DocumentCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/DocumentCell.h
+END
+CommandList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/202/trunk/iOS_Oxplorer/RSSReader/Classes/CommandList.pb.m
+END
+WorkBasket.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/178/trunk/iOS_Oxplorer/RSSReader/Classes/WorkBasket.m
+END
+RootViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/225/trunk/iOS_Oxplorer/RSSReader/Classes/RootViewController.h
+END
+Mandant.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/142/trunk/iOS_Oxplorer/RSSReader/Classes/Mandant.h
+END
+DocumentCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/230/trunk/iOS_Oxplorer/RSSReader/Classes/DocumentCell.m
+END
+XMLReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/XMLReader.h
+END
+MyDocument.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/MyDocument.h
+END
+RSSReaderAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/RSSReaderAppDelegate.h
+END
+Mandant.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/142/trunk/iOS_Oxplorer/RSSReader/Classes/Mandant.m
+END
+RootViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/264/trunk/iOS_Oxplorer/RSSReader/Classes/RootViewController.m
+END
+WorkbasketAndProcessViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/WorkbasketAndProcessViewController.xib
+END
+XMLReader.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/145/trunk/iOS_Oxplorer/RSSReader/Classes/XMLReader.m
+END
+MyDocument.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/MyDocument.m
+END
+MoveWbViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/MoveWbViewController.xib
+END
+RssReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/RssReader.h
+END
+RSSReaderAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/RSSReaderAppDelegate.m
+END
+WorkbasketAndProcessViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/WorkbasketAndProcessViewController.h
+END
+AbstractViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/AbstractViewController.xib
+END
+DocIndexCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/170/trunk/iOS_Oxplorer/RSSReader/Classes/DocIndexCell.h
+END
+MandantCollection.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/MandantCollection.pb.h
+END
+RssReader.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/RssReader.m
+END
+RedEdge.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/RedEdge.h
+END
+MyScrollView.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/MyScrollView.h
+END
+WbViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/WbViewController.xib
+END
+DocIndexCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/172/trunk/iOS_Oxplorer/RSSReader/Classes/DocIndexCell.m
+END
+WorkbasketAndProcessViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/WorkbasketAndProcessViewController.m
+END
+MandantCollection.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/MandantCollection.pb.m
+END
+RedEdge.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/RedEdge.m
+END
+MyScrollView.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/MyScrollView.m
+END
+WbList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/WbList.pb.h
+END
+UIFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/145/trunk/iOS_Oxplorer/RSSReader/Classes/UIFactory.h
+END
+WbViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/WbViewController.h
+END
+WbList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/WbList.pb.m
+END
+UIFactory.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/145/trunk/iOS_Oxplorer/RSSReader/Classes/UIFactory.m
+END
+ProcessList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessList.pb.h
+END
+WbViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/WbViewController.m
+END
+MyIndex.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/MyIndex.h
+END
+Document.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/142/trunk/iOS_Oxplorer/RSSReader/Classes/Document.h
+END
+TableIndexViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/TableIndexViewController.h
+END
+ProcessCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessCell.h
+END
+ProcessList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessList.pb.m
+END
+DocTypeIdList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/DocTypeIdList.pb.h
+END
+ThatkoLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/188/trunk/iOS_Oxplorer/RSSReader/Classes/ThatkoLib.h
+END
+MyIndex.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/MyIndex.m
+END
+Document.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/222/trunk/iOS_Oxplorer/RSSReader/Classes/Document.m
+END
+ProcessCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/222/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessCell.m
+END
+TableIndexViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/253/trunk/iOS_Oxplorer/RSSReader/Classes/TableIndexViewController.m
+END
+DocTypeIdList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/DocTypeIdList.pb.m
+END
+ThatkoLib.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/230/trunk/iOS_Oxplorer/RSSReader/Classes/ThatkoLib.m
+END
+TimeConverter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/TimeConverter.h
+END
+MyMandant.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/203/trunk/iOS_Oxplorer/RSSReader/Classes/MyMandant.h
+END
+TimeConverter.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/TimeConverter.m
+END
+MyMandant.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/203/trunk/iOS_Oxplorer/RSSReader/Classes/MyMandant.m
+END
+EditGroupNameView.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/EditGroupNameView.h
+END
+DocViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/DocViewController.xib
+END
+EditGroupNameView.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/145/trunk/iOS_Oxplorer/RSSReader/Classes/EditGroupNameView.m
+END
+IndexList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/IndexList.pb.h
+END
+IndexList.pb.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/206/trunk/iOS_Oxplorer/RSSReader/Classes/IndexList.pb.m
+END
+DocumentCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/137/trunk/iOS_Oxplorer/RSSReader/Classes/DocumentCell.xib
+END
+Process.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/142/trunk/iOS_Oxplorer/RSSReader/Classes/Process.h
+END
+Process.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/142/trunk/iOS_Oxplorer/RSSReader/Classes/Process.m
+END
+ProcessIdList.pb.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/241/trunk/iOS_Oxplorer/RSSReader/Classes/ProcessIdList.pb.h
+END

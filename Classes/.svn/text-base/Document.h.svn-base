@@ -1,0 +1,13 @@
+#import <Foundation/Foundation.h>
+
+@interface Document : NSObject {
+	NSString *id,*name,*description,*typeId;
+	NSMutableArray *arrIndex; 
+	int nPages;
+}
+
+@property (retain) NSString *id,*name,*description,*typeId;
+@property (retain) NSMutableArray *arrIndex;
+@property int nPages;
+
+@end

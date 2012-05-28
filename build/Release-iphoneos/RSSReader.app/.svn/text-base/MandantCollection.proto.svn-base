@@ -1,0 +1,66 @@
+package data;
+
+option java_package = "proto.data";
+option java_outer_classname = "MandantData";
+
+message MandantDefinition {
+  optional string id = 1;	
+  optional string name = 2;  
+  optional string url = 3;
+  optional string description = 4;
+/////////////////////////////	
+
+	message Page {
+	  optional string pageId = 1;	  
+	  optional string pageName = 2;
+	  optional bool readStatus = 3;
+	  optional string imgThumnailUrl = 4;
+	  optional string imgOriginalUrl = 5;	  
+	}
+
+	message Document {
+	  optional string docId = 1;	  
+	  optional string docName = 2;
+	  optional string docUrl = 3;
+	  optional string docType = 4;
+	  optional int32 numPages = 5;
+	  optional string docAmount = 6;	  
+	  optional string docCreditor = 7;	 
+	  
+	  repeated Page arrPages = 8;  
+	}
+
+	message Process {
+	  optional string proId = 1;	  
+	  optional string proName = 2;
+	  optional string proUrl = 3;
+	  optional string proDescription = 4;
+	  optional bool readStatus = 5;
+	  optional int32 numDocs = 6;	
+	  
+	  repeated Document arrDocs = 7;  
+	}
+
+  message WorkBasket {
+    optional string wbId = 1;	
+    optional string wbName = 2;  
+    optional string wbUrl = 3;
+    optional string groupname = 4;
+    optional string wbDescription = 5;
+    optional string lastBuildDate= 6;
+
+    repeated Process arrPros = 7;
+
+  }
+
+
+  repeated WorkBasket arrWbs = 5;
+}
+
+
+
+message MandantCOLLECTION {
+  repeated MandantDefinition mandant = 1;
+}
+
+
